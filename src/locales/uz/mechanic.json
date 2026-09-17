@@ -1,0 +1,159 @@
+{
+  "dashboard": {
+    "updated": "Boshqaruv paneli yangilandi",
+    "acceptingJobs": "Yangi buyurtmalar qabul qilinmoqda",
+    "notAcceptingJobs": "Buyurtmalar qabul qilinmayapti",
+    "acceptingHint": "Mijozlar sizni hozir band qilishlari mumkin",
+    "notAcceptingHint": "Siz qidiruvda ko'rinmaysiz",
+    "stats": {
+      "today": "Bugun",
+      "rating": "Reyting"
+    },
+    "bookingRequests": "Buyurtma so'rovlari",
+    "seeAll": "Barchasini ko'rish",
+    "noRequests": "Hozircha yangi so'rovlar yo'q.",
+    "todaysJobs": "Bugungi ishlar",
+    "schedule": "Jadval",
+    "noActiveJobs": "Faol ishlar yo'q.",
+    "jobAccepted": "Ish qabul qilindi",
+    "requestRejected": "So'rov rad etildi"
+  },
+  "jobCard": {
+    "state": {
+      "request": "Yangi so'rov",
+      "active": "Jarayonda",
+      "completed": "Bajarildi",
+      "rejected": "Rad etildi"
+    },
+    "reject": "Rad etish",
+    "accept": "Qabul qilish",
+    "markCompleted": "Bajarilgan deb belgilash"
+  },
+  "bottomNav": {
+    "dashboard": "Boshqaruv",
+    "jobs": "Ishlar",
+    "services": "Xizmatlar",
+    "alerts": "Bildirishnomalar",
+    "profile": "Profil"
+  },
+  "jobs": {
+    "title": "Ishlar",
+    "subtitle": "So'rovlarni ko'rib chiqing, davom etayotgan ishlarni kuzating va tugallangan ishlarni yoping.",
+    "tabs": {
+      "new": "Yangi ({{count}})",
+      "active": "Faol",
+      "done": "Tugallangan",
+      "rejected": "Rad etilgan"
+    },
+    "empty": "Bu yerda hozircha hech narsa yo'q.",
+    "jobAccepted": "Ish qabul qilindi",
+    "requestRejected": "So'rov rad etildi",
+    "jobCompleted": "Ish bajarilgan deb belgilandi",
+    "details": {
+      "jobId": "Ish ID",
+      "dateTime": "Sana va vaqt",
+      "address": "Manzil",
+      "price": "Narx",
+      "customerNote": "Mijoz izohi",
+      "none": "—"
+    }
+  },
+  "services": {
+    "title": "Mening xizmatlarim",
+    "subtitle": "Mijozlar band qila oladigan xizmatlarni belgilang.",
+    "edit": "Tahrirlash",
+    "deleteLabel": "{{name}} ni o'chirish",
+    "addService": "Xizmat qo'shish",
+    "editService": "Xizmatni tahrirlash",
+    "newService": "Yangi xizmat",
+    "serviceName": "Xizmat nomi",
+    "duration": "Davomiyligi",
+    "durationPlaceholder": "45 daqiqa",
+    "defaultDuration": "1 soat",
+    "price": "Xizmat narxi (so'm)",
+    "pricePlaceholder": "Masalan: 150000",
+    "priceNegotiable": "Kelishilgan",
+    "priceHint": "Ixtiyoriy. Bo'sh qoldirilsa «Kelishilgan» deb ko'rsatiladi.",
+    "serviceUpdated": "Xizmat yangilandi",
+    "serviceAdded": "Xizmat qo'shildi",
+    "serviceRemoved": "Xizmat o'chirildi"
+  },
+  "schedule": {
+    "title": "Jadval",
+    "subtitle": "Yaqinlashib kelayotgan uchrashuvlar va haftalik ish vaqtingiz.",
+    "workingHours": "Ish vaqti",
+    "closed": "Yopiq",
+    "opened": "ochildi",
+    "days": {
+      "Monday": "Dushanba",
+      "Tuesday": "Seshanba",
+      "Wednesday": "Chorshanba",
+      "Thursday": "Payshanba",
+      "Friday": "Juma",
+      "Saturday": "Shanba",
+      "Sunday": "Yakshanba",
+      "Mon": "Du",
+      "Tue": "Se",
+      "Wed": "Cho",
+      "Thu": "Pa",
+      "Fri": "Ju",
+      "Sat": "Sha",
+      "Sun": "Yak"
+    },
+    "dayStatusToast": "{{day}} {{status}}"
+  },
+  "reviews": {
+    "title": "Sharhlar",
+    "reviewsCount": "{{count}} ta sharh"
+  },
+  "notifications": {
+    "title": "Bildirishnomalar",
+    "subtitle": "Ish so'rovlari va sharhlar bir joyda."
+  },
+  "profile": {
+    "links": {
+      "reviews": "Sharhlar",
+      "schedule": "Jadval va ish vaqti",
+      "help": "Yordam va qo'llab-quvvatlash"
+    },
+    "supportToast": "Qo'llab-quvvatlash xizmati tez orada sizga qo'ng'iroq qiladi",
+    "acceptingJobs": "Yangi buyurtmalar qabul qilinmoqda",
+    "toggleAvailability": "Mavjudligingizni yoqing/o'chiring",
+    "gallery": "Sex galereyasi",
+    "galleryAlt": "Sex",
+    "stats": {
+      "rating": "Reyting",
+      "reviews": "Sharhlar",
+      "experience": "Tajriba",
+      "years": "{{count}} yil"
+    },
+    "language": "Til",
+    "logOut": "Chiqish",
+    "logOutConfirmTitle": "Tizimdan chiqasizmi?",
+    "logOutConfirmBody": "Sexingizni boshqarish uchun qayta tizimga kirishingiz kerak bo'ladi.",
+    "editProfile": "Profilni tahrirlash",
+    "editProfileDescription": "Ustaxona nomi, tavsif, manzil, logotip va muqova rasmini o'zgartiring",
+    "workshopName": "Ustaxona nomi",
+    "about": "Tavsif",
+    "address": "Manzil",
+    "logo": "Ustaxona logotipi",
+    "cover": "Muqova rasmi",
+    "changeLogo": "Logotipni o'zgartirish",
+    "changeCover": "Muqovani o'zgartirish",
+    "uploadingPhoto": "Rasm yuklanmoqda...",
+    "photoSuccess": "Rasm muvaffaqiyatli yuklandi",
+    "photoFailed": "Rasmni yuklashda xatolik yuz berdi",
+    "updateSuccess": "Profil muvaffaqiyatli yangilandi",
+    "updateFailed": "Profilni yangilab bo'lmadi",
+    "workshopLocation": "Ustaxona joylashuvi",
+    "changeOnMap": "Xaritadan oʻzgartirish",
+    "useCurrentLocation": "Mening joylashuvim",
+    "coordinates": "Koordinatalar",
+    "locationUpdated": "Yangi joylashuv belgilandi!"
+  },
+  "head": {
+    "title": "Usta paneli — UstaGo Avto",
+    "description": "UstaGo Avto sexingiz uchun buyurtma so'rovlarini, faol ishlarni, xizmatlarni va ish vaqtini boshqaring.",
+    "ogDescription": "Sexingiz uchun ishlarni va xizmatlarni boshqaring."
+  }
+}

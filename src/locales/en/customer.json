@@ -1,0 +1,337 @@
+{
+  "home": {
+    "greeting": {
+      "morning": "Good Morning",
+      "afternoon": "Good Afternoon",
+      "evening": "Good Evening"
+    },
+    "cityLabel": "{{city}}, Uzbekistan",
+    "searchPlaceholder": "What service do you need today?",
+    "notificationsLabel": "Notifications",
+    "sections": {
+      "quickServices": "Quick services",
+      "nearbyMechanics": "Nearby mechanics",
+      "specialOffers": "Special offers",
+      "popularServices": "Popular services"
+    },
+    "seeAll": "See all",
+    "browse": "Browse",
+    "from": "from {{price}}",
+    "avg": "avg {{price}}",
+    "gpsActive": "GPS active",
+    "gpsRequesting": "Locating...",
+    "enableGps": "Enable location",
+    "refreshSuccess": "Nearby workshops updated"
+  },
+  "search": {
+    "title": "Find a mechanic",
+    "searchPlaceholder": "Workshop, service or district",
+    "clearSearch": "Clear search",
+    "filters": "Filters",
+    "filtersTitle": "Filters",
+    "location": "Location",
+    "maxStartingPrice": "Max starting price · {{price}}",
+    "minimumRating": "Minimum rating · {{rating}}",
+    "any": "Any",
+    "distance": "Distance · up to {{distance}} km",
+    "openNow": "Open now",
+    "vehicleType": "Vehicle type",
+    "serviceType": "Service type",
+    "resetAllFilters": "Reset all filters",
+    "searching": "Searching…",
+    "workshopsFound": "{{count}} workshops found",
+    "noWorkshops": {
+      "title": "No workshops match",
+      "description": "Try widening your distance or price range, or clear the filters to see everything nearby.",
+      "action": "Change filters"
+    },
+    "districts": {
+      "allTashkent": "All Tashkent",
+      "chilanzar": "Chilanzar",
+      "yunusabad": "Yunusabad",
+      "mirzoUlugbek": "Mirzo Ulugbek",
+      "uchtepa": "Uchtepa",
+      "olmazor": "Olmazor",
+      "yashnobod": "Yashnobod",
+      "shayxontohur": "Shayxontohur"
+    },
+    "vehicleTypes": {
+      "any": "Any",
+      "passengerCars": "Passenger cars",
+      "trucks": "Trucks & commercial",
+      "foreignCars": "Foreign cars (Import)",
+      "cobalt": "Cobalt",
+      "gentra": "Gentra / Lacetti",
+      "nexia": "Nexia (1, 2, 3)",
+      "spark": "Spark",
+      "matiz": "Matiz",
+      "damas": "Damas / Labo",
+      "tracker": "Tracker",
+      "malibu": "Malibu",
+      "onix": "Onix / Monza",
+      "suv": "Crossover / SUV",
+      "sedan": "Sedan",
+      "hatchback": "Hatchback",
+      "minivan": "Minivan"
+    },
+    "sorts": {
+      "recommended": "Recommended",
+      "nearest": "Nearest",
+      "topRated": "Top rated",
+      "lowestPrice": "Lowest price"
+    }
+  },
+  "bookings": {
+    "title": "My bookings",
+    "subtitle": "Everything you've scheduled with UstaGo workshops.",
+    "tabs": {
+      "upcoming": "Upcoming",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "state": {
+      "upcoming": "Upcoming",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "noBookings": {
+      "title": "No {{state}} bookings",
+      "upcomingDescription": "Book a nearby workshop and your appointment will appear right here.",
+      "genericDescription": "You have no {{state}} bookings yet."
+    },
+    "details": "Details",
+    "reschedule": "Reschedule",
+    "cancel": "Cancel",
+    "detail": {
+      "bookingId": "Booking ID",
+      "workshop": "Workshop",
+      "date": "Date",
+      "vehicle": "Vehicle",
+      "statusTimeline": "Status timeline"
+    },
+    "rescheduleTitle": "Pick a new time",
+    "rescheduleSuccess": "Rescheduled to {{time}}",
+    "cancelDialog": {
+      "title": "Cancel this booking?",
+      "description": "The workshop will be notified immediately. You can always book again later.",
+      "keep": "Keep booking",
+      "confirm": "Cancel booking"
+    },
+    "cancelSuccess": "Booking cancelled"
+  },
+  "favorites": {
+    "title": "Favorites",
+    "subtitle": "Workshops and services you saved for later.",
+    "tabs": {
+      "mechanics": "Mechanics ({{count}})",
+      "services": "Services ({{count}})"
+    },
+    "noWorkshops": {
+      "title": "No saved workshops",
+      "description": "Tap the heart on any workshop to keep it here for quick rebooking."
+    },
+    "noServices": {
+      "title": "No saved services",
+      "description": "Save the services you book most often for faster access."
+    },
+    "from": "from {{price}}",
+    "book": "Book",
+    "removeAria": "Remove {{name}} from favorites",
+    "remove": "Remove"
+  },
+  "profile": {
+    "stats": {
+      "bookings": "Bookings",
+      "vehicles": "Vehicles",
+      "memberSince": "Member since"
+    },
+    "myVehicles": "My vehicles",
+    "savedCount": "{{count}} saved",
+    "bookingHistory": "Booking history",
+    "totalCount": "{{count}} total",
+    "language": "Language",
+    "darkMode": "Dark mode",
+    "toggleDarkMode": "Toggle dark mode",
+    "support": "Support",
+    "supportValue": "24/7",
+    "supportOpening": "Support chat opening…",
+    "about": "About UstaGo Avto",
+    "aboutValue": "v2.4.0",
+    "aboutToast": "UstaGo Avto · Tashkent, 2026",
+    "logout": "Log out",
+    "logoutDialog": {
+      "title": "Log out of UstaGo?",
+      "description": "You'll need to sign in again to see your bookings and saved workshops.",
+      "stay": "Stay signed in",
+      "confirm": "Log out"
+    },
+    "logoutSuccess": "Logged out",
+    "footer": "UstaGo Avto · Built for drivers in Uzbekistan",
+    "editProfile": "Edit profile",
+    "editProfileDescription": "Update your name, phone number, email and photo",
+    "fullName": "Full name",
+    "phoneNumber": "Phone number",
+    "email": "Email",
+    "photo": "Profile photo",
+    "changePhoto": "Change photo",
+    "uploadPhoto": "Choose photo",
+    "uploadingPhoto": "Uploading photo...",
+    "photoSuccess": "Profile photo updated successfully",
+    "photoFailed": "Failed to upload photo",
+    "updateSuccess": "Profile updated successfully",
+    "updateFailed": "Failed to update profile"
+  },
+  "vehicles": {
+    "title": "My vehicles",
+    "backAria": "Back to profile",
+    "add": "Add",
+    "noVehicles": {
+      "title": "No vehicles yet",
+      "description": "Add your car once and every booking will be pre-filled with the right details.",
+      "action": "Add vehicle"
+    },
+    "noPlate": "No plate",
+    "removeAria": "Remove {{brand}} {{model}}",
+    "removeSuccess": "Vehicle removed",
+    "addTitle": "Add vehicle",
+    "saveVehicle": "Save vehicle",
+    "validation": "Brand and model are required",
+    "addSuccess": "Vehicle added",
+    "fields": {
+      "brand": "Brand",
+      "model": "Model",
+      "year": "Year",
+      "engine": "Engine",
+      "plate": "License plate",
+      "color": "Color"
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "backAria": "Back to home",
+    "tabs": {
+      "all": "All",
+      "bookings": "Bookings",
+      "messages": "Messages",
+      "news": "News"
+    }
+  },
+  "mechanic": {
+    "goBack": "Go back",
+    "share": "Share",
+    "shareToast": "Link copied to clipboard",
+    "removeFromFavorites": "Remove from favorites",
+    "saveWorkshop": "Save workshop",
+    "yearsExperience": "{{owner}} · {{years}} yrs experience",
+    "reviewsCount": "{{count}} reviews",
+    "openNow": "Open now",
+    "closed": "Closed",
+    "untilTime": "until 20:00",
+    "navigate": "Navigate",
+    "navigatingToast": "Opening navigation…",
+    "workshopLocation": "Workshop Location",
+    "openInGoogleMaps": "Open in Google Maps (Directions)",
+    "distanceAway": "{{distance}} km away",
+    "workingHours": "Working hours",
+    "tabs": {
+      "services": "Services",
+      "gallery": "Gallery",
+      "reviews": "Reviews"
+    },
+    "galleryAlt": "{{name}} photo {{index}}",
+    "bookAppointment": "Book appointment",
+    "bookAt": "Book at {{name}}",
+    "service": "Service",
+    "tomorrow": "Tomorrow",
+    "confirmBooking": "Confirm booking",
+    "bookingRequested": "Booking requested",
+    "bookingRequestedDescription": "{{name}} · tomorrow at {{time}}",
+    "notSpecified": "Not specified",
+    "unavailableTitle": "Workshop unavailable",
+    "coverAlt": "{{name}} cover photo"
+  },
+  "layout": {
+    "sosAria": "Emergency road help",
+    "sosTitle": "Emergency road help",
+    "sosDescription": "We'll find the closest open workshop or send a mobile mechanic to your location.",
+    "requestMobileMechanic": "Request mobile mechanic",
+    "mobileMechanicRequested": "Mobile mechanic requested",
+    "mobileMechanicDescription": "The nearest available team will call you in 2 minutes.",
+    "callSupport": "Call 24/7 support",
+    "callingSupportToast": "Calling UstaGo support…"
+  },
+  "components": {
+    "openNow": "Open now",
+    "closed": "Closed",
+    "startingFrom": "Starting from",
+    "view": "View",
+    "from": "from {{price}}",
+    "goToOffer": "Go to offer {{index}}",
+    "ratingAria": "Rating {{value}} of 5",
+    "addToFavorites": "Add to favorites",
+    "removeFromFavorites": "Remove from favorites"
+  },
+  "head": {
+    "search": {
+      "title": "Search car workshops — UstaGo Avto",
+      "description": "Filter nearby car mechanics by service, price, rating, distance and vehicle type, then book instantly.",
+      "ogDescription": "Filter mechanics by price, rating, distance and more."
+    },
+    "bookings": {
+      "title": "My bookings — UstaGo Avto",
+      "description": "Track upcoming, completed and cancelled car service bookings, reschedule or cancel in one tap.",
+      "ogDescription": "Track, reschedule or cancel your car service bookings."
+    },
+    "favorites": {
+      "title": "Favorites — UstaGo Avto",
+      "description": "Your saved car workshops and favorite services, ready to book again in one tap.",
+      "ogDescription": "Saved workshops and services, ready to rebook."
+    },
+    "profile": {
+      "title": "My profile — UstaGo Avto",
+      "description": "Manage your UstaGo Avto account: vehicles, booking history, language and support.",
+      "ogDescription": "Manage vehicles, language and support."
+    },
+    "vehicles": {
+      "title": "My vehicles — UstaGo Avto",
+      "description": "Save your cars with brand, model, year, engine, plate and color for faster service bookings.",
+      "ogDescription": "Save your cars for faster service bookings."
+    },
+    "notifications": {
+      "title": "Notifications — UstaGo Avto",
+      "description": "Booking updates, workshop messages, promotions and platform announcements in one place.",
+      "ogDescription": "Booking updates, messages, promos and announcements."
+    },
+    "mechanic": {
+      "titleWithName": "{{name}} — UstaGo Avto",
+      "description": "{{name}} in {{district}}: {{rating}}★ from {{reviewCount}} reviews. Book online with UstaGo Avto.",
+      "ogDescription": "Verified workshop in {{district}}. Book a slot in seconds."
+    },
+    "app": {
+      "title": "UstaGo Avto — Book trusted car mechanics",
+      "description": "Find nearby verified car workshops in Tashkent, compare prices and book a mechanic in seconds with UstaGo Avto.",
+      "ogDescription": "Find nearby verified workshops, compare prices and book a mechanic in seconds."
+    }
+  },
+  "phones": {
+    "title": "Phone numbers",
+    "subtitle": "You can add up to 3 phone numbers",
+    "securityNoticeTitle": "Security notice",
+    "securityNoticeBody": "For account security and fraud prevention, removed phone numbers are not deleted immediately and remain scheduled for deletion after 14 days. You can restore the number at any time during this period.",
+    "primary": "Primary",
+    "scheduledDeletionBadge": "Scheduled for deletion in 14 days ({{days}} days left)",
+    "restoreAction": "Cancel deletion",
+    "makePrimary": "Make primary",
+    "deleteAction": "Delete",
+    "addNewPhone": "Add new phone number",
+    "enterNewPhone": "Enter new phone number",
+    "confirmDeleteTitle": "Confirm phone removal?",
+    "confirmDeleteDesc1": "Request to remove {{phone}} from your account.",
+    "confirmDeleteDesc2": "This number will be permanently deleted in 14 days. During this 14-day window, you can restore it anytime with the 'Cancel deletion' button.",
+    "confirmDeleteButton": "Schedule deletion",
+    "addSuccess": "Phone number successfully added",
+    "deleteScheduled": "For security reasons, this phone number will be permanently deleted in 14 days.",
+    "restoreSuccess": "Phone deletion cancelled and number reactivated.",
+    "primarySuccess": "Primary phone number successfully updated."
+  }
+}

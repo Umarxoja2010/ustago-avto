@@ -1,0 +1,337 @@
+{
+  "home": {
+    "greeting": {
+      "morning": "Доброе утро",
+      "afternoon": "Добрый день",
+      "evening": "Добрый вечер"
+    },
+    "cityLabel": "{{city}}, Узбекистан",
+    "searchPlaceholder": "Какая услуга нужна сегодня?",
+    "notificationsLabel": "Уведомления",
+    "sections": {
+      "quickServices": "Быстрые услуги",
+      "nearbyMechanics": "Мастера рядом",
+      "specialOffers": "Специальные предложения",
+      "popularServices": "Популярные услуги"
+    },
+    "seeAll": "Все",
+    "browse": "Смотреть",
+    "from": "от {{price}}",
+    "avg": "в среднем {{price}}",
+    "gpsActive": "GPS определен",
+    "gpsRequesting": "Определение...",
+    "enableGps": "Включить локацию",
+    "refreshSuccess": "Мастерские рядом обновлены"
+  },
+  "search": {
+    "title": "Найти мастера",
+    "searchPlaceholder": "Мастерская, услуга или район",
+    "clearSearch": "Очистить поиск",
+    "filters": "Фильтры",
+    "filtersTitle": "Фильтры",
+    "location": "Местоположение",
+    "maxStartingPrice": "Макс. начальная цена · {{price}}",
+    "minimumRating": "Минимальный рейтинг · {{rating}}",
+    "any": "Любой",
+    "distance": "Расстояние · до {{distance}} км",
+    "openNow": "Открыто сейчас",
+    "vehicleType": "Тип автомобиля",
+    "serviceType": "Тип услуги",
+    "resetAllFilters": "Сбросить все фильтры",
+    "searching": "Поиск…",
+    "workshopsFound": "Найдено мастерских: {{count}}",
+    "noWorkshops": {
+      "title": "Мастерские не найдены",
+      "description": "Попробуйте увеличить расстояние или диапазон цен, либо сбросьте фильтры, чтобы увидеть все варианты рядом.",
+      "action": "Изменить фильтры"
+    },
+    "districts": {
+      "allTashkent": "Весь Ташкент",
+      "chilanzar": "Чиланзар",
+      "yunusabad": "Юнусабад",
+      "mirzoUlugbek": "Мирзо-Улугбек",
+      "uchtepa": "Учтепа",
+      "olmazor": "Алмазар",
+      "yashnobod": "Яшнабад",
+      "shayxontohur": "Шайхантахур"
+    },
+    "vehicleTypes": {
+      "any": "Любой",
+      "passengerCars": "Легковые автомобили",
+      "trucks": "Грузовые автомобили",
+      "foreignCars": "Иномарки",
+      "cobalt": "Cobalt",
+      "gentra": "Gentra / Lacetti",
+      "nexia": "Nexia (1, 2, 3)",
+      "spark": "Spark",
+      "matiz": "Matiz",
+      "damas": "Damas / Labo",
+      "tracker": "Tracker",
+      "malibu": "Malibu",
+      "onix": "Onix / Monza",
+      "suv": "Кроссовер / SUV",
+      "sedan": "Седан",
+      "hatchback": "Хэтчбек",
+      "minivan": "Минивэн"
+    },
+    "sorts": {
+      "recommended": "Рекомендуемые",
+      "nearest": "Ближайшие",
+      "topRated": "Высокий рейтинг",
+      "lowestPrice": "Низкая цена"
+    }
+  },
+  "bookings": {
+    "title": "Мои записи",
+    "subtitle": "Всё, что вы запланировали в мастерских UstaGo.",
+    "tabs": {
+      "upcoming": "Предстоящие",
+      "completed": "Завершённые",
+      "cancelled": "Отменённые"
+    },
+    "state": {
+      "upcoming": "Предстоящая",
+      "completed": "Завершена",
+      "cancelled": "Отменена"
+    },
+    "noBookings": {
+      "title": "Нет {{state}} записей",
+      "upcomingDescription": "Забронируйте ближайшую мастерскую, и запись появится здесь.",
+      "genericDescription": "У вас пока нет {{state}} записей."
+    },
+    "details": "Подробнее",
+    "reschedule": "Перенести",
+    "cancel": "Отменить",
+    "detail": {
+      "bookingId": "ID записи",
+      "workshop": "Мастерская",
+      "date": "Дата",
+      "vehicle": "Автомобиль",
+      "statusTimeline": "История статуса"
+    },
+    "rescheduleTitle": "Выберите новое время",
+    "rescheduleSuccess": "Перенесено на {{time}}",
+    "cancelDialog": {
+      "title": "Отменить эту запись?",
+      "description": "Мастерская будет уведомлена немедленно. Вы всегда сможете записаться снова позже.",
+      "keep": "Оставить запись",
+      "confirm": "Отменить запись"
+    },
+    "cancelSuccess": "Запись отменена"
+  },
+  "favorites": {
+    "title": "Избранное",
+    "subtitle": "Мастерские и услуги, сохранённые на потом.",
+    "tabs": {
+      "mechanics": "Мастера ({{count}})",
+      "services": "Услуги ({{count}})"
+    },
+    "noWorkshops": {
+      "title": "Нет сохранённых мастерских",
+      "description": "Нажмите на сердечко у любой мастерской, чтобы сохранить её для быстрой записи."
+    },
+    "noServices": {
+      "title": "Нет сохранённых услуг",
+      "description": "Сохраните услуги, которые заказываете чаще всего, для быстрого доступа."
+    },
+    "from": "от {{price}}",
+    "book": "Записаться",
+    "removeAria": "Удалить {{name}} из избранного",
+    "remove": "Удалить"
+  },
+  "profile": {
+    "stats": {
+      "bookings": "Записи",
+      "vehicles": "Автомобили",
+      "memberSince": "С нами с"
+    },
+    "myVehicles": "Мои автомобили",
+    "savedCount": "сохранено: {{count}}",
+    "bookingHistory": "История записей",
+    "totalCount": "всего {{count}}",
+    "language": "Язык",
+    "darkMode": "Тёмная тема",
+    "toggleDarkMode": "Переключить тёмную тему",
+    "support": "Поддержка",
+    "supportValue": "24/7",
+    "supportOpening": "Открывается чат поддержки…",
+    "about": "О UstaGo Avto",
+    "aboutValue": "v2.4.0",
+    "aboutToast": "UstaGo Avto · Ташкент, 2026",
+    "logout": "Выйти",
+    "logoutDialog": {
+      "title": "Выйти из UstaGo?",
+      "description": "Вам нужно будет снова войти, чтобы увидеть свои записи и сохранённые мастерские.",
+      "stay": "Остаться в аккаунте",
+      "confirm": "Выйти"
+    },
+    "logoutSuccess": "Вы вышли из аккаунта",
+    "footer": "UstaGo Avto · Создано для водителей Узбекистана",
+    "editProfile": "Редактировать профиль",
+    "editProfileDescription": "Обновите ваше имя, номер телефона, email и фото",
+    "fullName": "Полное имя",
+    "phoneNumber": "Номер телефона",
+    "email": "Email",
+    "photo": "Фото профиля",
+    "changePhoto": "Изменить фото",
+    "uploadPhoto": "Выбрать фото",
+    "uploadingPhoto": "Загрузка фото...",
+    "photoSuccess": "Фото профиля успешно обновлено",
+    "photoFailed": "Не удалось загрузить фото",
+    "updateSuccess": "Профиль успешно обновлён",
+    "updateFailed": "Не удалось обновить профиль"
+  },
+  "vehicles": {
+    "title": "Мои автомобили",
+    "backAria": "Назад в профиль",
+    "add": "Добавить",
+    "noVehicles": {
+      "title": "Пока нет автомобилей",
+      "description": "Добавьте свой автомобиль один раз, и каждая запись будет заполняться нужными данными автоматически.",
+      "action": "Добавить автомобиль"
+    },
+    "noPlate": "Без номера",
+    "removeAria": "Удалить {{brand}} {{model}}",
+    "removeSuccess": "Автомобиль удалён",
+    "addTitle": "Добавить автомобиль",
+    "saveVehicle": "Сохранить автомобиль",
+    "validation": "Марка и модель обязательны",
+    "addSuccess": "Автомобиль добавлен",
+    "fields": {
+      "brand": "Марка",
+      "model": "Модель",
+      "year": "Год",
+      "engine": "Двигатель",
+      "plate": "Госномер",
+      "color": "Цвет"
+    }
+  },
+  "notifications": {
+    "title": "Уведомления",
+    "backAria": "На главную",
+    "tabs": {
+      "all": "Все",
+      "bookings": "Записи",
+      "messages": "Сообщения",
+      "news": "Новости"
+    }
+  },
+  "mechanic": {
+    "goBack": "Назад",
+    "share": "Поделиться",
+    "shareToast": "Ссылка скопирована",
+    "removeFromFavorites": "Удалить из избранного",
+    "saveWorkshop": "Сохранить мастерскую",
+    "yearsExperience": "{{owner}} · опыт {{years}} лет",
+    "reviewsCount": "отзывов: {{count}}",
+    "openNow": "Открыто сейчас",
+    "closed": "Закрыто",
+    "untilTime": "до 20:00",
+    "navigate": "Маршрут",
+    "navigatingToast": "Открывается навигация…",
+    "workshopLocation": "Местоположение мастерской",
+    "openInGoogleMaps": "Открыть в Google Maps (Маршрут)",
+    "distanceAway": "{{distance}} км от вас",
+    "workingHours": "Часы работы",
+    "tabs": {
+      "services": "Услуги",
+      "gallery": "Галерея",
+      "reviews": "Отзывы"
+    },
+    "galleryAlt": "{{name}} фото {{index}}",
+    "bookAppointment": "Записаться",
+    "bookAt": "Запись в {{name}}",
+    "service": "Услуга",
+    "tomorrow": "Завтра",
+    "confirmBooking": "Подтвердить запись",
+    "bookingRequested": "Запись отправлена",
+    "bookingRequestedDescription": "{{name}} · завтра в {{time}}",
+    "notSpecified": "Не указано",
+    "unavailableTitle": "Мастерская недоступна",
+    "coverAlt": "Обложка {{name}}"
+  },
+  "layout": {
+    "sosAria": "Экстренная помощь на дороге",
+    "sosTitle": "Экстренная помощь на дороге",
+    "sosDescription": "Мы найдём ближайшую открытую мастерскую или отправим выездного мастера к вам.",
+    "requestMobileMechanic": "Вызвать выездного мастера",
+    "mobileMechanicRequested": "Выездной мастер вызван",
+    "mobileMechanicDescription": "Ближайшая свободная бригада позвонит вам в течение 2 минут.",
+    "callSupport": "Позвонить в поддержку 24/7",
+    "callingSupportToast": "Звонок в поддержку UstaGo…"
+  },
+  "components": {
+    "openNow": "Открыто сейчас",
+    "closed": "Закрыто",
+    "startingFrom": "Стоимость от",
+    "view": "Смотреть",
+    "from": "от {{price}}",
+    "goToOffer": "Перейти к предложению {{index}}",
+    "ratingAria": "Рейтинг {{value}} из 5",
+    "addToFavorites": "Добавить в избранное",
+    "removeFromFavorites": "Удалить из избранного"
+  },
+  "head": {
+    "search": {
+      "title": "Поиск автомастерских — UstaGo Avto",
+      "description": "Фильтруйте мастеров по услугам, цене, рейтингу, расстоянию и типу автомобиля, затем бронируйте мгновенно.",
+      "ogDescription": "Фильтруйте мастеров по цене, рейтингу, расстоянию и не только."
+    },
+    "bookings": {
+      "title": "Мои записи — UstaGo Avto",
+      "description": "Отслеживайте предстоящие, завершённые и отменённые записи, переносите или отменяйте в одно касание.",
+      "ogDescription": "Отслеживайте, переносите или отменяйте свои записи на обслуживание."
+    },
+    "favorites": {
+      "title": "Избранное — UstaGo Avto",
+      "description": "Ваши сохранённые автомастерские и любимые услуги, готовые к повторной записи в одно касание.",
+      "ogDescription": "Сохранённые мастерские и услуги, готовые к повторной записи."
+    },
+    "profile": {
+      "title": "Мой профиль — UstaGo Avto",
+      "description": "Управляйте аккаунтом UstaGo Avto: автомобили, история записей, язык и поддержка.",
+      "ogDescription": "Управляйте автомобилями, языком и поддержкой."
+    },
+    "vehicles": {
+      "title": "Мои автомобили — UstaGo Avto",
+      "description": "Сохраните свои автомобили с маркой, моделью, годом, двигателем, номером и цветом для быстрой записи.",
+      "ogDescription": "Сохраните автомобили для более быстрой записи на обслуживание."
+    },
+    "notifications": {
+      "title": "Уведомления — UstaGo Avto",
+      "description": "Обновления записей, сообщения от мастерских, акции и объявления платформы в одном месте.",
+      "ogDescription": "Обновления записей, сообщения, акции и объявления."
+    },
+    "mechanic": {
+      "titleWithName": "{{name}} — UstaGo Avto",
+      "description": "{{name}} в районе {{district}}: {{rating}}★ на основе {{reviewCount}} отзывов. Бронируйте онлайн через UstaGo Avto.",
+      "ogDescription": "Проверенная мастерская в районе {{district}}. Забронируйте за секунды."
+    },
+    "app": {
+      "title": "UstaGo Avto — Бронируйте проверенных автомастеров",
+      "description": "Находите проверенные автомастерские рядом в Ташкенте, сравнивайте цены и бронируйте мастера за секунды с UstaGo Avto.",
+      "ogDescription": "Находите проверенные мастерские рядом, сравнивайте цены и бронируйте мастера за секунды."
+    }
+  },
+  "phones": {
+    "title": "Номера телефонов",
+    "subtitle": "Вы можете привязать до 3 номеров телефона",
+    "securityNoticeTitle": "Безопасность учетной записи",
+    "securityNoticeBody": "В целях безопасности и предотвращения мошенничества удаленные номера телефонов удаляются из системы только через 14 дней. В течение этого периода вы можете восстановить номер в любое время.",
+    "primary": "Основной",
+    "scheduledDeletionBadge": "Будет удален через 14 дней (осталось {{days}} дн.)",
+    "restoreAction": "Отменить",
+    "makePrimary": "Сделать основным",
+    "deleteAction": "Удалить",
+    "addNewPhone": "Добавить номер телефона",
+    "enterNewPhone": "Введите новый номер",
+    "confirmDeleteTitle": "Подтвердить удаление номера?",
+    "confirmDeleteDesc1": "Запрос на удаление номера {{phone}} из вашей учетной записи.",
+    "confirmDeleteDesc2": "Этот номер будет полностью удален через 14 дней. В течение 14 дней вы можете восстановить его нажатием кнопки «Отменить».",
+    "confirmDeleteButton": "Запланировать удаление",
+    "addSuccess": "Номер телефона успешно добавлен",
+    "deleteScheduled": "В целях безопасности номер телефона будет полностью удален через 14 дней.",
+    "restoreSuccess": "Удаление номера отменено, номер снова активен.",
+    "primarySuccess": "Основной номер телефона успешно изменен."
+  }
+}

@@ -1,0 +1,434 @@
+{
+  "shell": {
+    "panelName": "Панель администратора",
+    "closeMenu": "Закрыть меню",
+    "openMenu": "Открыть меню",
+    "logout": "Выйти",
+    "searchPlaceholder": "Поиск пользователей, мастеров, заказов...",
+    "notifications": "Уведомления",
+    "viewAll": "Смотреть все",
+    "announcements": "Объявления",
+    "adminFallback": "Администратор",
+    "notificationsAria": "Уведомления",
+    "superAdmin": "Супер администратор"
+  },
+  "dashboard": {
+    "title": "Панель управления",
+    "description": "Обзор маркетплейса UstaGo Avto в реальном времени.",
+    "viewReports": "Смотреть отчёты",
+    "head": {
+      "title": "Панель управления — UstaGo Avto Admin",
+      "description": "Обзор платформы: пользователи, мастера, заказы и рейтинги.",
+      "ogDescription": "Обзор платформы для администраторов UstaGo Avto."
+    },
+    "stats": {
+      "totalUsers": "Всего пользователей",
+      "totalMechanics": "Всего мастеров",
+      "activeBookings": "Активные заказы",
+      "completedBookings": "Завершённые заказы",
+      "pendingApprovals": "Ожидают одобрения",
+      "averageRating": "Средний рейтинг",
+      "vsLastMonth": "по сравнению с прошлым месяцем",
+      "inProgress": "в процессе",
+      "allTime": "за всё время",
+      "workshopsWaiting": "мастерских ожидают",
+      "platformWide": "по всей платформе"
+    },
+    "panels": {
+      "newRegistrations": "Новые регистрации",
+      "bookingsPerMonth": "Заказы по месяцам",
+      "recentRegistrations": "Недавние регистрации",
+      "allUsers": "Все пользователи",
+      "latestBookings": "Последние заказы",
+      "allBookings": "Все заказы",
+      "newestReviews": "Новые отзывы",
+      "allReviews": "Все отзывы",
+      "pendingMechanicRequests": "Заявки мастеров на рассмотрении",
+      "review": "Рассмотреть"
+    }
+  },
+  "users": {
+    "title": "Пользователи",
+    "description": "{{count}} аккаунтов клиентов на платформе.",
+    "inviteUser": "Пригласить пользователя",
+    "inviteRequiresApi": "Для приглашений требуется backend API",
+    "editRequiresApi": "Редактирование данных пользователя пока недоступно — для этого нет backend-эндпоинта.",
+    "deleteRequiresApi": "Удаление аккаунтов пока недоступно — для этого нет backend-эндпоинта.",
+    "searchPlaceholder": "Поиск по имени, email или телефону",
+    "statusPlaceholder": "Статус",
+    "allStatuses": "Все статусы",
+    "emptyTitle": "Пользователи не найдены",
+    "emptyDescription": "Попробуйте другой поиск или фильтр.",
+    "table": {
+      "user": "Пользователь",
+      "phone": "Телефон",
+      "email": "Email",
+      "registered": "Регистрация",
+      "status": "Статус",
+      "actions": "Действия"
+    },
+    "actionsMenu": {
+      "aria": "Действия",
+      "viewProfile": "Смотреть профиль",
+      "editUser": "Редактировать пользователя",
+      "suspendAccount": "Заблокировать аккаунт",
+      "activateAccount": "Активировать аккаунт",
+      "deleteAccount": "Удалить аккаунт"
+    },
+    "toasts": {
+      "statusChanged": "{{name}} теперь {{status}}",
+      "updated": "Пользователь успешно обновлён",
+      "deleted": "Пользователь удалён"
+    },
+    "viewDialog": {
+      "title": "Профиль пользователя",
+      "phone": "Телефон",
+      "email": "Email",
+      "city": "Город",
+      "bookings": "Заказы",
+      "registered": "Дата регистрации",
+      "status": "Статус"
+    },
+    "editDialog": {
+      "title": "Редактировать пользователя",
+      "fullName": "Полное имя",
+      "email": "Email",
+      "phone": "Телефон"
+    },
+    "deleteDialog": {
+      "title": "Удалить этот аккаунт?",
+      "description": "{{name}} будет безвозвратно удалён с платформы.",
+      "confirmLabel": "Удалить"
+    },
+    "head": {
+      "title": "Пользователи — UstaGo Avto Admin",
+      "description": "Поиск, редактирование, блокировка и управление клиентами UstaGo Avto.",
+      "ogDescription": "Управление аккаунтами клиентов UstaGo Avto."
+    }
+  },
+  "mechanics": {
+    "title": "Мастера",
+    "description": "Проверка и управление мастерскими-партнёрами.",
+    "searchPlaceholder": "Поиск мастерской, владельца или адреса",
+    "verificationPlaceholder": "Верификация",
+    "allStatuses": "Все статусы",
+    "emptyTitle": "Мастерские не найдены",
+    "emptyDescription": "Измените поиск или фильтр.",
+    "table": {
+      "workshop": "Мастерская",
+      "owner": "Владелец",
+      "phone": "Телефон",
+      "address": "Адрес",
+      "services": "Услуги",
+      "rating": "Рейтинг",
+      "verification": "Верификация",
+      "actions": "Действия"
+    },
+    "actionsMenu": {
+      "aria": "Действия",
+      "viewDetails": "Смотреть детали",
+      "editInformation": "Редактировать информацию",
+      "approve": "Одобрить",
+      "reject": "Отклонить",
+      "suspend": "Заблокировать",
+      "delete": "Удалить"
+    },
+    "toasts": {
+      "approved": "{{workshop}} одобрена",
+      "rejected": "{{workshop}} отклонена",
+      "suspended": "{{workshop}} заблокирована",
+      "updated": "Информация о мастерской обновлена",
+      "deleted": "Мастерская удалена"
+    },
+    "editRequiresApi": "Редактирование данных мастерской пока недоступно — для этого нет backend-эндпоинта.",
+    "deleteRequiresApi": "Удаление мастерской пока недоступно — для этого нет backend-эндпоинта.",
+    "viewDialog": {
+      "owner": "Владелец",
+      "phone": "Телефон",
+      "address": "Адрес",
+      "services": "Услуги",
+      "completedJobs": "Выполненные заказы",
+      "rating": "Рейтинг",
+      "joined": "Дата регистрации",
+      "status": "Статус"
+    },
+    "editDialog": {
+      "title": "Редактировать мастерскую",
+      "workshopName": "Название мастерской",
+      "owner": "Владелец",
+      "phone": "Телефон",
+      "address": "Адрес"
+    },
+    "deleteDialog": {
+      "title": "Удалить эту мастерскую?",
+      "description": "{{workshop}} и её объявления будут удалены.",
+      "confirmLabel": "Удалить"
+    },
+    "head": {
+      "title": "Мастера — UstaGo Avto Admin",
+      "description": "Одобрение, верификация и управление мастерскими на UstaGo Avto.",
+      "ogDescription": "Верификация и управление мастерскими."
+    }
+  },
+  "bookings": {
+    "title": "Заказы",
+    "description": "Все заявки на услуги на платформе.",
+    "searchPlaceholder": "Поиск по ID заказа, клиенту или мастерской",
+    "statusPlaceholder": "Статус",
+    "allStatuses": "Все статусы",
+    "emptyTitle": "Заказы не найдены",
+    "emptyDescription": "Попробуйте другой фильтр.",
+    "table": {
+      "bookingId": "ID заказа",
+      "customer": "Клиент",
+      "mechanic": "Мастер",
+      "date": "Дата",
+      "status": "Статус",
+      "price": "Цена",
+      "actions": "Действия"
+    },
+    "actionsMenu": {
+      "aria": "Действия",
+      "viewBooking": "Смотреть заказ",
+      "updateStatus": "Изменить статус",
+      "markAs": "Отметить как {{status}}",
+      "cancelBooking": "Отменить заказ"
+    },
+    "toasts": {
+      "statusUpdated": "{{id}} отмечен как {{status}}"
+    },
+    "viewDialog": {
+      "title": "Заказ {{id}}",
+      "customer": "Клиент",
+      "mechanic": "Мастер",
+      "service": "Услуга",
+      "date": "Дата",
+      "price": "Цена",
+      "status": "Статус"
+    },
+    "cancelDialog": {
+      "title": "Отменить этот заказ?",
+      "description": "Заказ {{id}} будет отменён, обе стороны получат уведомление.",
+      "confirmLabel": "Отменить заказ"
+    },
+    "head": {
+      "title": "Заказы — UstaGo Avto Admin",
+      "description": "Отслеживание, обновление и отмена заказов на UstaGo Avto.",
+      "ogDescription": "Управление заказами UstaGo Avto."
+    }
+  },
+  "reviews": {
+    "title": "Отзывы",
+    "description": "Модерация отзывов, оставленных клиентами.",
+    "searchPlaceholder": "Поиск по клиенту, мастерской или тексту",
+    "ratingPlaceholder": "Рейтинг",
+    "allRatings": "Все рейтинги",
+    "stars": "{{count}} звёзд",
+    "emptyTitle": "Отзывы не найдены",
+    "emptyDescription": "Ничего не соответствует этим фильтрам.",
+    "table": {
+      "customer": "Клиент",
+      "mechanic": "Мастер",
+      "rating": "Рейтинг",
+      "comment": "Комментарий",
+      "date": "Дата",
+      "visibility": "Видимость",
+      "actions": "Действия"
+    },
+    "actionsMenu": {
+      "aria": "Действия",
+      "viewReview": "Смотреть отзыв",
+      "hide": "Скрыть отзыв",
+      "unhide": "Показать отзыв",
+      "deleteReview": "Удалить отзыв"
+    },
+    "toasts": {
+      "unhidden": "Отзыв снова виден",
+      "hidden": "Отзыв скрыт из приложения",
+      "deleted": "Отзыв удалён"
+    },
+    "deleteRequiresApi": "Удаление отзывов пока недоступно — для этого нет backend-эндпоинта.",
+    "viewDialog": {
+      "title": "Отзыв {{id}}"
+    },
+    "deleteDialog": {
+      "title": "Удалить этот отзыв?",
+      "description": "Это действие нельзя отменить.",
+      "confirmLabel": "Удалить"
+    },
+    "head": {
+      "title": "Отзывы — UstaGo Avto Admin",
+      "description": "Модерация отзывов клиентов и скрытие неуместного контента.",
+      "ogDescription": "Модерация отзывов для UstaGo Avto."
+    }
+  },
+  "notifications": {
+    "title": "Уведомления",
+    "description": "Отправка push-объявлений вашей аудитории.",
+    "newNotification": "Новое уведомление",
+    "audience": "Аудитория",
+    "audienceAll": "Все пользователи",
+    "audienceMechanics": "Мастера",
+    "audienceCustomers": "Клиенты",
+    "type": "Тип",
+    "typeAnnouncement": "Объявление",
+    "typeAlert": "Предупреждение",
+    "typeInfo": "Информация",
+    "titleLabel": "Заголовок",
+    "titlePlaceholder": "например, Плановое обслуживание",
+    "messageLabel": "Сообщение",
+    "messagePlaceholder": "Напишите ваше объявление...",
+    "send": "Отправить уведомление",
+    "sentHistory": "История отправленных",
+    "emptyTitle": "Пока нет уведомлений",
+    "emptyDescription": "Отправленные сообщения появятся здесь.",
+    "deleteAria": "Удалить уведомление",
+    "toasts": {
+      "required": "Заголовок и сообщение обязательны",
+      "sentToAll": "Уведомление отправлено всем пользователям",
+      "sentToAudience": "Уведомление отправлено: {{audience}}",
+      "deleted": "Уведомление удалено"
+    },
+    "deleteRequiresApi": "Удаление отправленной рассылки пока недоступно — для этого нет backend-эндпоинта.",
+    "deleteDialog": {
+      "title": "Удалить уведомление?",
+      "description": "Оно будет удалено из истории.",
+      "confirmLabel": "Удалить"
+    },
+    "head": {
+      "title": "Уведомления — UstaGo Avto Admin",
+      "description": "Отправка объявлений клиентам и мастерам.",
+      "ogDescription": "Массовые рассылки для UstaGo Avto."
+    }
+  },
+  "reports": {
+    "title": "Отчёты",
+    "description": "Аналитика за последние 7 месяцев активности.",
+    "stats": {
+      "totalRevenue": "Общий доход",
+      "ytd": "с начала года",
+      "allTime": "за всё время",
+      "bookingsThisMonth": "Заказы за этот месяц",
+      "newUsersThisMonth": "Новые пользователи за этот месяц"
+    },
+    "charts": {
+      "newUsersPerMonth": "Новые пользователи по месяцам",
+      "bookingsPerMonth": "Заказы по месяцам",
+      "revenueTrend": "Динамика дохода",
+      "popularServices": "Самые популярные услуги"
+    },
+    "topRatedMechanics": "Мастера с лучшим рейтингом",
+    "jobsCount": "{{count}} заказов",
+    "head": {
+      "title": "Отчёты — UstaGo Avto Admin",
+      "description": "Аналитика роста, заказов, доходов и услуг.",
+      "ogDescription": "Аналитика маркетплейса UstaGo Avto."
+    }
+  },
+  "settings": {
+    "title": "Настройки",
+    "description": "Общая конфигурация платформы UstaGo Avto.",
+    "saveChanges": "Сохранить изменения",
+    "toastSaved": "Настройки сохранены",
+    "saveRequiresApi": "Эти настройки пока не подключены к реальному API — ничего на самом деле не сохраняется.",
+    "general": {
+      "title": "Основное",
+      "description": "Базовая информация о приложении.",
+      "appName": "Название приложения",
+      "supportPhone": "Телефон поддержки",
+      "supportEmail": "Email поддержки",
+      "panelLanguage": "Язык панели"
+    },
+    "languages": {
+      "title": "Языки",
+      "description": "Выберите язык по умолчанию для платформы и панели администратора.",
+      "enable": "Включить {{label}}",
+      "defaultLanguage": "Язык по умолчанию",
+      "activeLanguage": "Текущий активный язык",
+      "uz": "O'zbekcha (UZ)",
+      "ru": "Русский (RU)",
+      "en": "English (EN)"
+    },
+    "theme": {
+      "title": "Тема и оформление",
+      "description": "Визуальные настройки для панели администратора.",
+      "darkMode": "Темный режим (Dark mode)",
+      "darkModeHint": "Включить или отключить темную тему интерфейса.",
+      "lightMode": "Светлая тема",
+      "compactTables": "Компактные таблицы",
+      "compactTablesHint": "Уменьшить высоту строк для плотных данных.",
+      "compactTablesAria": "Компактные таблицы",
+      "brandColor": "Фирменный цвет",
+      "brandColorValue": "#15803D · Основной зеленый"
+    },
+    "security": {
+      "title": "Безопасность и пароль",
+      "description": "Управление паролем и безопасностью учетной записи администратора.",
+      "currentPassword": "Текущий пароль",
+      "currentPasswordPlaceholder": "Введите текущий пароль",
+      "newPassword": "Новый пароль",
+      "newPasswordPlaceholder": "Не менее 6 символов",
+      "confirmPassword": "Подтверждение нового пароля",
+      "confirmPasswordPlaceholder": "Повторите новый пароль",
+      "changePassword": "Сменить пароль",
+      "updating": "Сохранение...",
+      "passwordUpdated": "Пароль успешно обновлен!",
+      "passwordInvalid": "Новый пароль должен содержать не менее 6 символов и совпадать с подтверждением.",
+      "fillAllFields": "Пожалуйста, заполните все поля пароля.",
+      "requirements": "Требования безопасности:",
+      "reqMin": "Пароль должен содержать минимум 6 символов",
+      "reqMatch": "Новый пароль и подтверждение должны полностью совпадать",
+      "body": "Самостоятельная регистрация администраторов отключена. Новые администраторы создаются только главным администратором платформы."
+    },
+    "head": {
+      "title": "Настройки — UstaGo Avto Admin",
+      "description": "Настройка названия приложения, контактов поддержки и языков.",
+      "ogDescription": "Общая конфигурация UstaGo Avto."
+    }
+  },
+  "pagination": {
+    "summary": "{{total}} записей · страница {{page}} из {{pageCount}}",
+    "prev": "Назад",
+    "next": "Далее"
+  },
+  "offers": {
+    "title": "Спецпредложения",
+    "description": "Управление рекламными акциями, скидками и баннерами на главной странице.",
+    "addOffer": "Добавить спецпредложение",
+    "editOffer": "Редактировать предложение",
+    "deleteOffer": "Удалить предложение",
+    "deleteConfirm": "Вы действительно хотите удалить это предложение?",
+    "table": {
+      "image": "Фото",
+      "badge": "Бейдж",
+      "title": "Заголовок",
+      "order": "Порядок",
+      "status": "Статус",
+      "actions": "Действия"
+    },
+    "form": {
+      "titleLabel": "Заголовок",
+      "titlePlaceholder": "Например: Сезонная скидка 20%",
+      "subtitleLabel": "Краткое описание",
+      "subtitlePlaceholder": "Скидка до 20% на все услуги компьютерной диагностики",
+      "ctaLabel": "Текст кнопки (CTA)",
+      "ctaPlaceholder": "Подробнее / Записаться",
+      "imageLabel": "Ссылка на фото (URL)",
+      "imagePlaceholder": "https://images.unsplash.com/...",
+      "linkLabel": "Ссылка для перехода (Link)",
+      "linkPlaceholder": "/search или /services",
+      "badgeLabel": "Бейдж (Badge)",
+      "badgePlaceholder": "-20% или Новинка",
+      "accentLabel": "Цветовой стиль (Градиент)",
+      "sortOrderLabel": "Порядок отображения",
+      "activeLabel": "Активно (отображать на главной)"
+    },
+    "status": {
+      "active": "Активно",
+      "inactive": "Неактивно"
+    },
+    "saved": "Спецпредложение успешно сохранено",
+    "deleted": "Спецпредложение удалено",
+    "empty": "Пока нет добавленных спецпредложений."
+  }
+}

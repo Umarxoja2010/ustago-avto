@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "uz.ustago.avto",
+      "sha256_cert_fingerprints": [
+        "9F:DD:B2:55:52:0D:5C:1B:5B:3B:14:F1:83:74:10:3D:A2:0F:78:13:1A:57:4C:73:68:D2:60:0A:93:2A:28:00"
+      ]
+    }
+  }
+]

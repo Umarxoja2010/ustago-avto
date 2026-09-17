@@ -1,0 +1,57 @@
+{
+  "id": "uz.ustago.avto",
+  "name": "UstaGo Avto — Avtoservis Tarmog'i",
+  "short_name": "UstaGo",
+  "description": "O'zbekistonda avtomobilingiz uchun eng yaqin va ishonchli ustalarni toping, narxlarni solishtiring va navbatsiz qabulga yoziling.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#15803d",
+  "background_color": "#071a32",
+  "lang": "uz",
+  "dir": "ltr",
+  "categories": ["auto", "navigation", "utilities", "business"],
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192x192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512x512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ustaxonalar qidirish",
+      "short_name": "Qidirish",
+      "description": "Eng yaqin avtoservis va ustalarni xaritada topish",
+      "url": "/app/search",
+      "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Mening bandlovlarim",
+      "short_name": "Bandlovlar",
+      "description": "Avtoservis qabuliga yozilishlar ro'yxati",
+      "url": "/app/bookings",
+      "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}

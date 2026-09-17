@@ -1,0 +1,434 @@
+{
+  "shell": {
+    "panelName": "Admin panel",
+    "closeMenu": "Menyuni yopish",
+    "openMenu": "Menyuni ochish",
+    "logout": "Chiqish",
+    "searchPlaceholder": "Foydalanuvchi, usta, buyurtma qidirish...",
+    "notifications": "Bildirishnomalar",
+    "viewAll": "Barchasini ko'rish",
+    "announcements": "E'lonlar",
+    "adminFallback": "Admin",
+    "notificationsAria": "Bildirishnomalar",
+    "superAdmin": "Bosh administrator"
+  },
+  "dashboard": {
+    "title": "Boshqaruv paneli",
+    "description": "UstaGo Avto bozorining jonli umumiy ko'rinishi.",
+    "viewReports": "Hisobotlarni ko'rish",
+    "head": {
+      "title": "Boshqaruv paneli — UstaGo Avto Admin",
+      "description": "Platforma umumiy ko'rinishi: foydalanuvchilar, ustalar, buyurtmalar va reytinglar.",
+      "ogDescription": "UstaGo Avto administratorlari uchun platforma umumiy ko'rinishi."
+    },
+    "stats": {
+      "totalUsers": "Jami foydalanuvchilar",
+      "totalMechanics": "Jami ustalar",
+      "activeBookings": "Faol buyurtmalar",
+      "completedBookings": "Bajarilgan buyurtmalar",
+      "pendingApprovals": "Tasdiq kutmoqda",
+      "averageRating": "O'rtacha reyting",
+      "vsLastMonth": "o'tgan oyga nisbatan",
+      "inProgress": "jarayonda",
+      "allTime": "barcha vaqt",
+      "workshopsWaiting": "ustaxona kutmoqda",
+      "platformWide": "platforma bo'yicha"
+    },
+    "panels": {
+      "newRegistrations": "Yangi ro'yxatdan o'tishlar",
+      "bookingsPerMonth": "Oylik buyurtmalar",
+      "recentRegistrations": "So'nggi ro'yxatdan o'tishlar",
+      "allUsers": "Barcha foydalanuvchilar",
+      "latestBookings": "So'nggi buyurtmalar",
+      "allBookings": "Barcha buyurtmalar",
+      "newestReviews": "Eng yangi sharhlar",
+      "allReviews": "Barcha sharhlar",
+      "pendingMechanicRequests": "Kutilayotgan usta so'rovlari",
+      "review": "Ko'rib chiqish"
+    }
+  },
+  "users": {
+    "title": "Foydalanuvchilar",
+    "description": "Platformada {{count}} ta mijoz hisobi mavjud.",
+    "inviteUser": "Foydalanuvchi taklif qilish",
+    "inviteRequiresApi": "Takliflar uchun backend API kerak",
+    "editRequiresApi": "Foydalanuvchi ma'lumotlarini tahrirlash hozircha mavjud emas — bunga backend endpoint yo'q.",
+    "deleteRequiresApi": "Hisoblarni o'chirish hozircha mavjud emas — bunga backend endpoint yo'q.",
+    "searchPlaceholder": "Ism, email yoki telefon bo'yicha qidirish",
+    "statusPlaceholder": "Holat",
+    "allStatuses": "Barcha holatlar",
+    "emptyTitle": "Foydalanuvchilar topilmadi",
+    "emptyDescription": "Boshqa qidiruv yoki filtr sinab ko'ring.",
+    "table": {
+      "user": "Foydalanuvchi",
+      "phone": "Telefon",
+      "email": "Email",
+      "registered": "Ro'yxatdan o'tgan",
+      "status": "Holat",
+      "actions": "Amallar"
+    },
+    "actionsMenu": {
+      "aria": "Amallar",
+      "viewProfile": "Profilni ko'rish",
+      "editUser": "Foydalanuvchini tahrirlash",
+      "suspendAccount": "Hisobni to'xtatish",
+      "activateAccount": "Hisobni faollashtirish",
+      "deleteAccount": "Hisobni o'chirish"
+    },
+    "toasts": {
+      "statusChanged": "{{name}} endi {{status}}",
+      "updated": "Foydalanuvchi muvaffaqiyatli yangilandi",
+      "deleted": "Foydalanuvchi o'chirildi"
+    },
+    "viewDialog": {
+      "title": "Foydalanuvchi profili",
+      "phone": "Telefon",
+      "email": "Email",
+      "city": "Shahar",
+      "bookings": "Buyurtmalar",
+      "registered": "Ro'yxatdan o'tgan sana",
+      "status": "Holat"
+    },
+    "editDialog": {
+      "title": "Foydalanuvchini tahrirlash",
+      "fullName": "To'liq ism",
+      "email": "Email",
+      "phone": "Telefon"
+    },
+    "deleteDialog": {
+      "title": "Ushbu hisob o'chirilsinmi?",
+      "description": "{{name}} platformadan butunlay o'chirib tashlanadi.",
+      "confirmLabel": "O'chirish"
+    },
+    "head": {
+      "title": "Foydalanuvchilar — UstaGo Avto Admin",
+      "description": "UstaGo Avto mijozlarini qidirish, tahrirlash, to'xtatish va boshqarish.",
+      "ogDescription": "UstaGo Avto mijoz hisoblarini boshqarish."
+    }
+  },
+  "mechanics": {
+    "title": "Ustalar",
+    "description": "Hamkor ustaxonalarni tekshirish va boshqarish.",
+    "searchPlaceholder": "Ustaxona, egasi yoki manzil bo'yicha qidirish",
+    "verificationPlaceholder": "Tasdiqlash",
+    "allStatuses": "Barcha holatlar",
+    "emptyTitle": "Ustaxonalar topilmadi",
+    "emptyDescription": "Qidiruv yoki filtrni o'zgartiring.",
+    "table": {
+      "workshop": "Ustaxona",
+      "owner": "Egasi",
+      "phone": "Telefon",
+      "address": "Manzil",
+      "services": "Xizmatlar",
+      "rating": "Reyting",
+      "verification": "Tasdiqlash",
+      "actions": "Amallar"
+    },
+    "actionsMenu": {
+      "aria": "Amallar",
+      "viewDetails": "Tafsilotlarni ko'rish",
+      "editInformation": "Ma'lumotni tahrirlash",
+      "approve": "Tasdiqlash",
+      "reject": "Rad etish",
+      "suspend": "To'xtatish",
+      "delete": "O'chirish"
+    },
+    "toasts": {
+      "approved": "{{workshop}} tasdiqlandi",
+      "rejected": "{{workshop}} rad etildi",
+      "suspended": "{{workshop}} to'xtatildi",
+      "updated": "Ustaxona ma'lumotlari yangilandi",
+      "deleted": "Ustaxona o'chirildi"
+    },
+    "editRequiresApi": "Ustaxona ma'lumotlarini tahrirlash hozircha mavjud emas — bunga backend endpoint yo'q.",
+    "deleteRequiresApi": "Ustaxonani o'chirish hozircha mavjud emas — bunga backend endpoint yo'q.",
+    "viewDialog": {
+      "owner": "Egasi",
+      "phone": "Telefon",
+      "address": "Manzil",
+      "services": "Xizmatlar",
+      "completedJobs": "Bajarilgan ishlar",
+      "rating": "Reyting",
+      "joined": "Qo'shilgan sana",
+      "status": "Holat"
+    },
+    "editDialog": {
+      "title": "Ustaxonani tahrirlash",
+      "workshopName": "Ustaxona nomi",
+      "owner": "Egasi",
+      "phone": "Telefon",
+      "address": "Manzil"
+    },
+    "deleteDialog": {
+      "title": "Ushbu ustaxona o'chirilsinmi?",
+      "description": "{{workshop}} va uning e'lonlari o'chirib tashlanadi.",
+      "confirmLabel": "O'chirish"
+    },
+    "head": {
+      "title": "Ustalar — UstaGo Avto Admin",
+      "description": "UstaGo Avto'da ustaxonalarni tasdiqlash, tekshirish va boshqarish.",
+      "ogDescription": "Ustaxonalarni tasdiqlash va boshqarish."
+    }
+  },
+  "bookings": {
+    "title": "Buyurtmalar",
+    "description": "Bozordagi barcha xizmat so'rovlari.",
+    "searchPlaceholder": "Buyurtma ID, mijoz yoki ustaxona bo'yicha qidirish",
+    "statusPlaceholder": "Holat",
+    "allStatuses": "Barcha holatlar",
+    "emptyTitle": "Buyurtmalar topilmadi",
+    "emptyDescription": "Boshqa filtrni sinab ko'ring.",
+    "table": {
+      "bookingId": "Buyurtma ID",
+      "customer": "Mijoz",
+      "mechanic": "Usta",
+      "date": "Sana",
+      "status": "Holat",
+      "price": "Narx",
+      "actions": "Amallar"
+    },
+    "actionsMenu": {
+      "aria": "Amallar",
+      "viewBooking": "Buyurtmani ko'rish",
+      "updateStatus": "Holatni yangilash",
+      "markAs": "{{status}} deb belgilash",
+      "cancelBooking": "Buyurtmani bekor qilish"
+    },
+    "toasts": {
+      "statusUpdated": "{{id}} {{status}} deb belgilandi"
+    },
+    "viewDialog": {
+      "title": "Buyurtma {{id}}",
+      "customer": "Mijoz",
+      "mechanic": "Usta",
+      "service": "Xizmat",
+      "date": "Sana",
+      "price": "Narx",
+      "status": "Holat"
+    },
+    "cancelDialog": {
+      "title": "Ushbu buyurtma bekor qilinsinmi?",
+      "description": "{{id}} buyurtmasi bekor qilinadi va har ikkala tomon xabardor qilinadi.",
+      "confirmLabel": "Buyurtmani bekor qilish"
+    },
+    "head": {
+      "title": "Buyurtmalar — UstaGo Avto Admin",
+      "description": "UstaGo Avto'da xizmat buyurtmalarini kuzatish, yangilash va bekor qilish.",
+      "ogDescription": "UstaGo Avto uchun buyurtmalar bilan ishlash."
+    }
+  },
+  "reviews": {
+    "title": "Sharhlar",
+    "description": "Mijozlar tomonidan qoldirilgan fikrlarni moderatsiya qilish.",
+    "searchPlaceholder": "Mijoz, ustaxona yoki matn bo'yicha qidirish",
+    "ratingPlaceholder": "Reyting",
+    "allRatings": "Barcha reytinglar",
+    "stars": "{{count}} yulduz",
+    "emptyTitle": "Sharhlar topilmadi",
+    "emptyDescription": "Ushbu filtrlarga hech narsa mos kelmaydi.",
+    "table": {
+      "customer": "Mijoz",
+      "mechanic": "Usta",
+      "rating": "Reyting",
+      "comment": "Izoh",
+      "date": "Sana",
+      "visibility": "Ko'rinish",
+      "actions": "Amallar"
+    },
+    "actionsMenu": {
+      "aria": "Amallar",
+      "viewReview": "Sharhni ko'rish",
+      "hide": "Sharhni yashirish",
+      "unhide": "Sharhni ko'rsatish",
+      "deleteReview": "Sharhni o'chirish"
+    },
+    "toasts": {
+      "unhidden": "Sharh yana ko'rinadigan bo'ldi",
+      "hidden": "Sharh ilovadan yashirildi",
+      "deleted": "Sharh o'chirildi"
+    },
+    "deleteRequiresApi": "Sharhlarni o'chirish hozircha mavjud emas — bunga backend endpoint yo'q.",
+    "viewDialog": {
+      "title": "Sharh {{id}}"
+    },
+    "deleteDialog": {
+      "title": "Ushbu sharh o'chirilsinmi?",
+      "description": "Bu amalni ortga qaytarib bo'lmaydi.",
+      "confirmLabel": "O'chirish"
+    },
+    "head": {
+      "title": "Sharhlar — UstaGo Avto Admin",
+      "description": "Mijozlar sharhlarini moderatsiya qilish va nomaqbul kontentni yashirish.",
+      "ogDescription": "UstaGo Avto uchun sharhlarni moderatsiya qilish."
+    }
+  },
+  "notifications": {
+    "title": "Bildirishnomalar",
+    "description": "Auditoriyangizga push e'lonlarini yuborish.",
+    "newNotification": "Yangi bildirishnoma",
+    "audience": "Auditoriya",
+    "audienceAll": "Barcha foydalanuvchilar",
+    "audienceMechanics": "Ustalar",
+    "audienceCustomers": "Mijozlar",
+    "type": "Turi",
+    "typeAnnouncement": "E'lon",
+    "typeAlert": "Ogohlantirish",
+    "typeInfo": "Ma'lumot",
+    "titleLabel": "Sarlavha",
+    "titlePlaceholder": "masalan, Rejalashtirilgan texnik xizmat",
+    "messageLabel": "Xabar",
+    "messagePlaceholder": "E'loningizni yozing...",
+    "send": "Bildirishnoma yuborish",
+    "sentHistory": "Yuborilganlar tarixi",
+    "emptyTitle": "Hozircha bildirishnomalar yo'q",
+    "emptyDescription": "Yuborilgan xabarlaringiz shu yerda ko'rinadi.",
+    "deleteAria": "Bildirishnomani o'chirish",
+    "toasts": {
+      "required": "Sarlavha va xabar talab qilinadi",
+      "sentToAll": "Bildirishnoma barcha foydalanuvchilarga yuborildi",
+      "sentToAudience": "Bildirishnoma {{audience}} ga yuborildi",
+      "deleted": "Bildirishnoma o'chirildi"
+    },
+    "deleteRequiresApi": "Yuborilgan bildirishnomani o'chirish hozircha mavjud emas — bunga backend endpoint yo'q.",
+    "deleteDialog": {
+      "title": "Bildirishnoma o'chirilsinmi?",
+      "description": "U tarix jurnalidan o'chiriladi.",
+      "confirmLabel": "O'chirish"
+    },
+    "head": {
+      "title": "Bildirishnomalar — UstaGo Avto Admin",
+      "description": "Mijozlar va ustalarga e'lonlar yuborish.",
+      "ogDescription": "UstaGo Avto uchun ommaviy xabar yuborish."
+    }
+  },
+  "reports": {
+    "title": "Hisobotlar",
+    "description": "So'nggi 7 oylik faoliyat asosidagi tahlil.",
+    "stats": {
+      "totalRevenue": "Umumiy daromad",
+      "ytd": "yil boshidan",
+      "allTime": "barcha vaqt",
+      "bookingsThisMonth": "Shu oydagi buyurtmalar",
+      "newUsersThisMonth": "Shu oydagi yangi foydalanuvchilar"
+    },
+    "charts": {
+      "newUsersPerMonth": "Oylik yangi foydalanuvchilar",
+      "bookingsPerMonth": "Oylik buyurtmalar",
+      "revenueTrend": "Daromad dinamikasi",
+      "popularServices": "Eng mashhur xizmatlar"
+    },
+    "topRatedMechanics": "Eng yuqori reytingli ustalar",
+    "jobsCount": "{{count}} ish",
+    "head": {
+      "title": "Hisobotlar — UstaGo Avto Admin",
+      "description": "O'sish, buyurtmalar, daromad va xizmatlar tahlili.",
+      "ogDescription": "UstaGo Avto bozori uchun tahlil."
+    }
+  },
+  "settings": {
+    "title": "Sozlamalar",
+    "description": "UstaGo Avto platformasining umumiy konfiguratsiyasi.",
+    "saveChanges": "O'zgarishlarni saqlash",
+    "toastSaved": "Sozlamalar saqlandi",
+    "saveRequiresApi": "Bu sozlamalar hali haqiqiy API bilan bog'lanmagan — hech narsa saqlanmayapti.",
+    "general": {
+      "title": "Umumiy",
+      "description": "Ilovaning asosiy ma'lumotlari.",
+      "appName": "Ilova nomi",
+      "supportPhone": "Qo'llab-quvvatlash telefoni",
+      "supportEmail": "Qo'llab-quvvatlash email",
+      "panelLanguage": "Panel tili"
+    },
+    "languages": {
+      "title": "Tillar",
+      "description": "Platforma va boshqaruv paneli tilini tanlang.",
+      "enable": "{{label}} ni yoqish",
+      "defaultLanguage": "Standart til",
+      "activeLanguage": "Joriy faol til",
+      "uz": "O'zbekcha (UZ)",
+      "ru": "Русский (RU)",
+      "en": "English (EN)"
+    },
+    "theme": {
+      "title": "Mavzu va Ko'rinish",
+      "description": "Admin panel uchun vizual ranglar sozlamalari.",
+      "darkMode": "Tungi rejim (Dark mode)",
+      "darkModeHint": "Ko'zga qulay qorong'i ranglar mavzusini yoqish yoki o'chirish.",
+      "lightMode": "Yorug' mavzu",
+      "compactTables": "Ixcham jadvallar",
+      "compactTablesHint": "Zich ma'lumotlar uchun qator balandligini kamaytiring.",
+      "compactTablesAria": "Ixcham jadvallar",
+      "brandColor": "Brend rangi",
+      "brandColorValue": "#15803D · Asosiy yashil"
+    },
+    "security": {
+      "title": "Xavfsizlik va Parol",
+      "description": "Administrator parolini yangilash va hisob xavfsizligini ta'minlash.",
+      "currentPassword": "Joriy parol",
+      "currentPasswordPlaceholder": "Hozirgi parolingizni kiriting",
+      "newPassword": "Yangi parol",
+      "newPasswordPlaceholder": "Kamida 6 ta belgi",
+      "confirmPassword": "Yangi parolni tasdiqlash",
+      "confirmPasswordPlaceholder": "Yangi parolni qayta kiriting",
+      "changePassword": "Parolni yangilash",
+      "updating": "Saqlanmoqda...",
+      "passwordUpdated": "Parol muvaffaqiyatli yangilandi!",
+      "passwordInvalid": "Yangi parol kamida 6 ta belgidan iborat bo'lishi va tasdiq bilan mos kelishi kerak.",
+      "fillAllFields": "Iltimos, barcha parol maydonlarini to'liq to'ldiring.",
+      "requirements": "Xavfsizlik talablari:",
+      "reqMin": "Parol kamida 6 ta belgidan iborat bo'lishi shart",
+      "reqMatch": "Yangi parol va tasdiq bir-biriga to'liq mos bo'lishi kerak",
+      "body": "Administrator hisoblarini o'z-o'zidan ro'yxatdan o'tkazish o'chirilgan. Yangi administratorlarni faqat platforma bosh administratori yaratishi mumkin."
+    },
+    "head": {
+      "title": "Sozlamalar — UstaGo Avto Admin",
+      "description": "Ilova nomi, qo'llab-quvvatlash kontaktlari va tillarni sozlash.",
+      "ogDescription": "UstaGo Avto uchun umumiy konfiguratsiya."
+    }
+  },
+  "pagination": {
+    "summary": "{{total}} ta yozuv · {{page}}-sahifa, jami {{pageCount}}",
+    "prev": "Orqaga",
+    "next": "Keyingi"
+  },
+  "offers": {
+    "title": "Maxsus takliflar",
+    "description": "Bosh sahifadagi aksiya, chegirma va maxsus e'lonlarni boshqarish.",
+    "addOffer": "Yangi taklif qo'shish",
+    "editOffer": "Taklifni tahrirlash",
+    "deleteOffer": "Taklifni o'chirish",
+    "deleteConfirm": "Haqiqatan ham ushbu taklifni o'chirmoqchimisiz?",
+    "table": {
+      "image": "Rasm",
+      "badge": "Yorliq",
+      "title": "Sarlavha",
+      "order": "Tartib",
+      "status": "Holat",
+      "actions": "Amallar"
+    },
+    "form": {
+      "titleLabel": "Sarlavha",
+      "titlePlaceholder": "Masalan: Mavsumiy chegirma 20%",
+      "subtitleLabel": "Qisqacha tavsif",
+      "subtitlePlaceholder": "Barcha diagnostika xizmatlariga 20% gacha chegirma",
+      "ctaLabel": "Tugma matni (CTA)",
+      "ctaPlaceholder": "Batafsil yoki Band qilish",
+      "imageLabel": "Rasm havolasi (URL)",
+      "imagePlaceholder": "https://images.unsplash.com/...",
+      "linkLabel": "Yo'naltirish havolasi (Link)",
+      "linkPlaceholder": "/search yoki /services",
+      "badgeLabel": "Yorliq (Badge)",
+      "badgePlaceholder": "-20% yoki Yangi",
+      "accentLabel": "Rang uslubi (Gradient)",
+      "sortOrderLabel": "Tartib raqami",
+      "activeLabel": "Faol (bosh sahifada ko'rinsin)"
+    },
+    "status": {
+      "active": "Faol",
+      "inactive": "Nofaol"
+    },
+    "saved": "Taklif muvaffaqiyatli saqlandi",
+    "deleted": "Taklif o'chirildi",
+    "empty": "Hozircha hech qanday maxsus taklif mavjud emas."
+  }
+}

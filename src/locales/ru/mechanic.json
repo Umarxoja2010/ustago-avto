@@ -1,0 +1,159 @@
+{
+  "dashboard": {
+    "updated": "Панель обновлена",
+    "acceptingJobs": "Принимаете новые заказы",
+    "notAcceptingJobs": "Заказы не принимаются",
+    "acceptingHint": "Клиенты могут забронировать вас прямо сейчас",
+    "notAcceptingHint": "Вы скрыты в поиске",
+    "stats": {
+      "today": "Сегодня",
+      "rating": "Рейтинг"
+    },
+    "bookingRequests": "Заявки на бронирование",
+    "seeAll": "Смотреть все",
+    "noRequests": "Пока нет новых заявок.",
+    "todaysJobs": "Сегодняшние заказы",
+    "schedule": "Расписание",
+    "noActiveJobs": "Нет активных заказов.",
+    "jobAccepted": "Заказ принят",
+    "requestRejected": "Заявка отклонена"
+  },
+  "jobCard": {
+    "state": {
+      "request": "Новая заявка",
+      "active": "В процессе",
+      "completed": "Завершено",
+      "rejected": "Отклонено"
+    },
+    "reject": "Отклонить",
+    "accept": "Принять",
+    "markCompleted": "Отметить выполненным"
+  },
+  "bottomNav": {
+    "dashboard": "Панель",
+    "jobs": "Заказы",
+    "services": "Услуги",
+    "alerts": "Уведомления",
+    "profile": "Профиль"
+  },
+  "jobs": {
+    "title": "Заказы",
+    "subtitle": "Просматривайте заявки, отслеживайте текущую работу и закрывайте выполненные заказы.",
+    "tabs": {
+      "new": "Новые ({{count}})",
+      "active": "Активные",
+      "done": "Готово",
+      "rejected": "Отклонённые"
+    },
+    "empty": "Здесь пока ничего нет.",
+    "jobAccepted": "Заказ принят",
+    "requestRejected": "Заявка отклонена",
+    "jobCompleted": "Заказ отмечен как выполненный",
+    "details": {
+      "jobId": "ID заказа",
+      "dateTime": "Дата и время",
+      "address": "Адрес",
+      "price": "Цена",
+      "customerNote": "Примечание клиента",
+      "none": "—"
+    }
+  },
+  "services": {
+    "title": "Мои услуги",
+    "subtitle": "Настройте услуги, которые могут бронировать клиенты.",
+    "edit": "Изменить",
+    "deleteLabel": "Удалить {{name}}",
+    "addService": "Добавить услугу",
+    "editService": "Изменить услугу",
+    "newService": "Новая услуга",
+    "serviceName": "Название услуги",
+    "duration": "Длительность",
+    "durationPlaceholder": "45 мин",
+    "defaultDuration": "1 ч",
+    "price": "Стоимость услуги (сум)",
+    "pricePlaceholder": "Например: 150000",
+    "priceNegotiable": "Договорная",
+    "priceHint": "Необязательно. Если не указано, будет показано «Договорная».",
+    "serviceUpdated": "Услуга обновлена",
+    "serviceAdded": "Услуга добавлена",
+    "serviceRemoved": "Услуга удалена"
+  },
+  "schedule": {
+    "title": "Расписание",
+    "subtitle": "Предстоящие записи и ваш недельный график работы.",
+    "workingHours": "Рабочие часы",
+    "closed": "Закрыто",
+    "opened": "открыт(о)",
+    "days": {
+      "Monday": "Понедельник",
+      "Tuesday": "Вторник",
+      "Wednesday": "Среда",
+      "Thursday": "Четверг",
+      "Friday": "Пятница",
+      "Saturday": "Суббота",
+      "Sunday": "Воскресенье",
+      "Mon": "Пн",
+      "Tue": "Вт",
+      "Wed": "Ср",
+      "Thu": "Чт",
+      "Fri": "Пт",
+      "Sat": "Сб",
+      "Sun": "Вс"
+    },
+    "dayStatusToast": "{{day}} {{status}}"
+  },
+  "reviews": {
+    "title": "Отзывы",
+    "reviewsCount": "{{count}} отзывов"
+  },
+  "notifications": {
+    "title": "Уведомления",
+    "subtitle": "Заявки на заказы и отзывы в одном месте."
+  },
+  "profile": {
+    "links": {
+      "reviews": "Отзывы",
+      "schedule": "Расписание и рабочие часы",
+      "help": "Помощь и поддержка"
+    },
+    "supportToast": "Служба поддержки скоро вам перезвонит",
+    "acceptingJobs": "Принимаете новые заказы",
+    "toggleAvailability": "Переключить доступность",
+    "gallery": "Галерея мастерской",
+    "galleryAlt": "Мастерская",
+    "stats": {
+      "rating": "Рейтинг",
+      "reviews": "Отзывы",
+      "experience": "Опыт",
+      "years": "{{count}} лет"
+    },
+    "language": "Язык",
+    "logOut": "Выйти",
+    "logOutConfirmTitle": "Выйти из аккаунта?",
+    "logOutConfirmBody": "Вам нужно будет снова войти, чтобы управлять мастерской.",
+    "editProfile": "Редактировать профиль",
+    "editProfileDescription": "Обновите название мастерской, описание, адрес, логотип и обложку",
+    "workshopName": "Название мастерской",
+    "about": "Описание",
+    "address": "Адрес",
+    "logo": "Логотип мастерской",
+    "cover": "Обложка мастерской",
+    "changeLogo": "Изменить логотип",
+    "changeCover": "Изменить обложку",
+    "uploadingPhoto": "Загрузка фото...",
+    "photoSuccess": "Фото успешно загружено",
+    "photoFailed": "Не удалось загрузить фото",
+    "updateSuccess": "Профиль успешно обновлён",
+    "updateFailed": "Не удалось обновить профиль",
+    "workshopLocation": "Местоположение мастерской",
+    "changeOnMap": "Изменить на карте",
+    "useCurrentLocation": "Моё местоположение",
+    "coordinates": "Координаты",
+    "locationUpdated": "Новое местоположение сохранено!"
+  },
+  "head": {
+    "title": "Панель мастера — UstaGo Avto",
+    "description": "Управляйте заявками на бронирование, активными заказами, услугами и рабочими часами вашей мастерской UstaGo Avto.",
+    "ogDescription": "Управляйте заказами и услугами вашей мастерской."
+  }
+}

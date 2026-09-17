@@ -1,0 +1,434 @@
+{
+  "shell": {
+    "panelName": "Admin Panel",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu",
+    "logout": "Logout",
+    "searchPlaceholder": "Search users, mechanics, bookings...",
+    "notifications": "Notifications",
+    "viewAll": "View all",
+    "announcements": "Announcements",
+    "adminFallback": "Admin",
+    "notificationsAria": "Notifications",
+    "superAdmin": "Super Admin"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "description": "Live overview of the UstaGo Avto marketplace.",
+    "viewReports": "View reports",
+    "head": {
+      "title": "Dashboard — UstaGo Avto Admin",
+      "description": "Platform overview: users, mechanics, bookings and ratings.",
+      "ogDescription": "Platform overview for UstaGo Avto administrators."
+    },
+    "stats": {
+      "totalUsers": "Total Users",
+      "totalMechanics": "Total Mechanics",
+      "activeBookings": "Active Bookings",
+      "completedBookings": "Completed Bookings",
+      "pendingApprovals": "Pending Approvals",
+      "averageRating": "Average Rating",
+      "vsLastMonth": "vs last month",
+      "inProgress": "in progress",
+      "allTime": "all time",
+      "workshopsWaiting": "workshops waiting",
+      "platformWide": "platform wide"
+    },
+    "panels": {
+      "newRegistrations": "New registrations",
+      "bookingsPerMonth": "Bookings per month",
+      "recentRegistrations": "Recent registrations",
+      "allUsers": "All users",
+      "latestBookings": "Latest bookings",
+      "allBookings": "All bookings",
+      "newestReviews": "Newest reviews",
+      "allReviews": "All reviews",
+      "pendingMechanicRequests": "Pending mechanic requests",
+      "review": "Review"
+    }
+  },
+  "users": {
+    "title": "Users",
+    "description": "{{count}} customer accounts on the platform.",
+    "inviteUser": "Invite user",
+    "inviteRequiresApi": "Invitations require the backend API",
+    "editRequiresApi": "Editing user details isn't available yet — no backend endpoint exists for this.",
+    "deleteRequiresApi": "Deleting accounts isn't available yet — no backend endpoint exists for this.",
+    "searchPlaceholder": "Search by name, email or phone",
+    "statusPlaceholder": "Status",
+    "allStatuses": "All statuses",
+    "emptyTitle": "No users found",
+    "emptyDescription": "Try a different search or filter.",
+    "table": {
+      "user": "User",
+      "phone": "Phone",
+      "email": "Email",
+      "registered": "Registered",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "actionsMenu": {
+      "aria": "Actions",
+      "viewProfile": "View profile",
+      "editUser": "Edit user",
+      "suspendAccount": "Suspend account",
+      "activateAccount": "Activate account",
+      "deleteAccount": "Delete account"
+    },
+    "toasts": {
+      "statusChanged": "{{name}} is now {{status}}",
+      "updated": "User updated successfully",
+      "deleted": "User deleted"
+    },
+    "viewDialog": {
+      "title": "User profile",
+      "phone": "Phone",
+      "email": "Email",
+      "city": "City",
+      "bookings": "Bookings",
+      "registered": "Registered",
+      "status": "Status"
+    },
+    "editDialog": {
+      "title": "Edit user",
+      "fullName": "Full name",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "deleteDialog": {
+      "title": "Delete this account?",
+      "description": "{{name}} will be permanently removed from the platform.",
+      "confirmLabel": "Delete"
+    },
+    "head": {
+      "title": "Users — UstaGo Avto Admin",
+      "description": "Search, edit, suspend and manage UstaGo Avto customers.",
+      "ogDescription": "Manage UstaGo Avto customer accounts."
+    }
+  },
+  "mechanics": {
+    "title": "Mechanics",
+    "description": "Verification and management of partner workshops.",
+    "searchPlaceholder": "Search workshop, owner or address",
+    "verificationPlaceholder": "Verification",
+    "allStatuses": "All statuses",
+    "emptyTitle": "No workshops found",
+    "emptyDescription": "Adjust your search or filter.",
+    "table": {
+      "workshop": "Workshop",
+      "owner": "Owner",
+      "phone": "Phone",
+      "address": "Address",
+      "services": "Services",
+      "rating": "Rating",
+      "verification": "Verification",
+      "actions": "Actions"
+    },
+    "actionsMenu": {
+      "aria": "Actions",
+      "viewDetails": "View details",
+      "editInformation": "Edit information",
+      "approve": "Approve",
+      "reject": "Reject",
+      "suspend": "Suspend",
+      "delete": "Delete"
+    },
+    "toasts": {
+      "approved": "{{workshop}} approved",
+      "rejected": "{{workshop}} rejected",
+      "suspended": "{{workshop}} suspended",
+      "updated": "Workshop information updated",
+      "deleted": "Workshop deleted"
+    },
+    "editRequiresApi": "Editing workshop details isn't available yet — no backend endpoint exists for this.",
+    "deleteRequiresApi": "Deleting a workshop isn't available yet — no backend endpoint exists for this.",
+    "viewDialog": {
+      "owner": "Owner",
+      "phone": "Phone",
+      "address": "Address",
+      "services": "Services",
+      "completedJobs": "Completed jobs",
+      "rating": "Rating",
+      "joined": "Joined",
+      "status": "Status"
+    },
+    "editDialog": {
+      "title": "Edit workshop",
+      "workshopName": "Workshop name",
+      "owner": "Owner",
+      "phone": "Phone",
+      "address": "Address"
+    },
+    "deleteDialog": {
+      "title": "Delete this workshop?",
+      "description": "{{workshop}} and its listings will be removed.",
+      "confirmLabel": "Delete"
+    },
+    "head": {
+      "title": "Mechanics — UstaGo Avto Admin",
+      "description": "Approve, verify and manage workshops on UstaGo Avto.",
+      "ogDescription": "Workshop verification and management."
+    }
+  },
+  "bookings": {
+    "title": "Bookings",
+    "description": "All service requests across the marketplace.",
+    "searchPlaceholder": "Search booking ID, customer or workshop",
+    "statusPlaceholder": "Status",
+    "allStatuses": "All statuses",
+    "emptyTitle": "No bookings found",
+    "emptyDescription": "Try another filter.",
+    "table": {
+      "bookingId": "Booking ID",
+      "customer": "Customer",
+      "mechanic": "Mechanic",
+      "date": "Date",
+      "status": "Status",
+      "price": "Price",
+      "actions": "Actions"
+    },
+    "actionsMenu": {
+      "aria": "Actions",
+      "viewBooking": "View booking",
+      "updateStatus": "Update status",
+      "markAs": "Mark as {{status}}",
+      "cancelBooking": "Cancel booking"
+    },
+    "toasts": {
+      "statusUpdated": "{{id}} marked as {{status}}"
+    },
+    "viewDialog": {
+      "title": "Booking {{id}}",
+      "customer": "Customer",
+      "mechanic": "Mechanic",
+      "service": "Service",
+      "date": "Date",
+      "price": "Price",
+      "status": "Status"
+    },
+    "cancelDialog": {
+      "title": "Cancel this booking?",
+      "description": "Booking {{id}} will be cancelled and both parties notified.",
+      "confirmLabel": "Cancel booking"
+    },
+    "head": {
+      "title": "Bookings — UstaGo Avto Admin",
+      "description": "Track, update and cancel service bookings on UstaGo Avto.",
+      "ogDescription": "Booking operations for UstaGo Avto."
+    }
+  },
+  "reviews": {
+    "title": "Reviews",
+    "description": "Moderate feedback left by customers.",
+    "searchPlaceholder": "Search customer, workshop or text",
+    "ratingPlaceholder": "Rating",
+    "allRatings": "All ratings",
+    "stars": "{{count}} stars",
+    "emptyTitle": "No reviews found",
+    "emptyDescription": "Nothing matches these filters.",
+    "table": {
+      "customer": "Customer",
+      "mechanic": "Mechanic",
+      "rating": "Rating",
+      "comment": "Comment",
+      "date": "Date",
+      "visibility": "Visibility",
+      "actions": "Actions"
+    },
+    "actionsMenu": {
+      "aria": "Actions",
+      "viewReview": "View review",
+      "hide": "Hide review",
+      "unhide": "Unhide review",
+      "deleteReview": "Delete review"
+    },
+    "toasts": {
+      "unhidden": "Review is visible again",
+      "hidden": "Review hidden from the app",
+      "deleted": "Review deleted"
+    },
+    "deleteRequiresApi": "Deleting reviews isn't available yet — no backend endpoint exists for this.",
+    "viewDialog": {
+      "title": "Review {{id}}"
+    },
+    "deleteDialog": {
+      "title": "Delete this review?",
+      "description": "This action cannot be undone.",
+      "confirmLabel": "Delete"
+    },
+    "head": {
+      "title": "Reviews — UstaGo Avto Admin",
+      "description": "Moderate customer reviews and hide inappropriate content.",
+      "ogDescription": "Review moderation for UstaGo Avto."
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "description": "Send push announcements to your audience.",
+    "newNotification": "New notification",
+    "audience": "Audience",
+    "audienceAll": "All users",
+    "audienceMechanics": "Mechanics",
+    "audienceCustomers": "Customers",
+    "type": "Type",
+    "typeAnnouncement": "Announcement",
+    "typeAlert": "Alert",
+    "typeInfo": "Info",
+    "titleLabel": "Title",
+    "titlePlaceholder": "e.g. Scheduled maintenance",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write your announcement...",
+    "send": "Send notification",
+    "sentHistory": "Sent history",
+    "emptyTitle": "No notifications yet",
+    "emptyDescription": "Your sent messages appear here.",
+    "deleteAria": "Delete notification",
+    "toasts": {
+      "required": "Title and message are required",
+      "sentToAll": "Notification sent to all users",
+      "sentToAudience": "Notification sent to {{audience}}",
+      "deleted": "Notification deleted"
+    },
+    "deleteRequiresApi": "Deleting a sent broadcast isn't available yet — no backend endpoint exists for this.",
+    "deleteDialog": {
+      "title": "Delete notification?",
+      "description": "It will be removed from the history log.",
+      "confirmLabel": "Delete"
+    },
+    "head": {
+      "title": "Notifications — UstaGo Avto Admin",
+      "description": "Send announcements to customers and mechanics.",
+      "ogDescription": "Broadcast messaging for UstaGo Avto."
+    }
+  },
+  "reports": {
+    "title": "Reports",
+    "description": "Analytics based on the last 7 months of activity.",
+    "stats": {
+      "totalRevenue": "Total revenue",
+      "ytd": "YTD",
+      "allTime": "all time",
+      "bookingsThisMonth": "Bookings this month",
+      "newUsersThisMonth": "New users this month"
+    },
+    "charts": {
+      "newUsersPerMonth": "New users per month",
+      "bookingsPerMonth": "Bookings per month",
+      "revenueTrend": "Revenue trend",
+      "popularServices": "Most popular services"
+    },
+    "topRatedMechanics": "Top rated mechanics",
+    "jobsCount": "{{count}} jobs",
+    "head": {
+      "title": "Reports — UstaGo Avto Admin",
+      "description": "Growth, bookings, revenue and service analytics.",
+      "ogDescription": "Analytics for the UstaGo Avto marketplace."
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "description": "General configuration of the UstaGo Avto platform.",
+    "saveChanges": "Save changes",
+    "toastSaved": "Settings saved",
+    "saveRequiresApi": "These settings aren't backed by a real API yet — nothing here is actually persisted.",
+    "general": {
+      "title": "General",
+      "description": "Basic identity of the application.",
+      "appName": "Application name",
+      "supportPhone": "Support phone",
+      "supportEmail": "Support email",
+      "panelLanguage": "Panel language"
+    },
+    "languages": {
+      "title": "Languages",
+      "description": "Select the default language for the platform and admin panel.",
+      "enable": "Enable {{label}}",
+      "defaultLanguage": "Default language",
+      "activeLanguage": "Currently active language",
+      "uz": "O'zbekcha (UZ)",
+      "ru": "Русский (RU)",
+      "en": "English (EN)"
+    },
+    "theme": {
+      "title": "Theme & Appearance",
+      "description": "Visual settings for the admin panel.",
+      "darkMode": "Dark Mode",
+      "darkModeHint": "Toggle dark theme for comfortable viewing in low-light environments.",
+      "lightMode": "Light theme",
+      "compactTables": "Compact tables",
+      "compactTablesHint": "Reduce row height for dense data.",
+      "compactTablesAria": "Compact tables",
+      "brandColor": "Brand color",
+      "brandColorValue": "#15803D · Primary green"
+    },
+    "security": {
+      "title": "Security & Password",
+      "description": "Manage administrator account security and update password.",
+      "currentPassword": "Current password",
+      "currentPasswordPlaceholder": "Enter current password",
+      "newPassword": "New password",
+      "newPasswordPlaceholder": "At least 6 characters",
+      "confirmPassword": "Confirm new password",
+      "confirmPasswordPlaceholder": "Re-enter new password",
+      "changePassword": "Change password",
+      "updating": "Saving...",
+      "passwordUpdated": "Password updated successfully!",
+      "passwordInvalid": "New password must be at least 6 characters and match confirmation.",
+      "fillAllFields": "Please fill in all password fields.",
+      "requirements": "Security requirements:",
+      "reqMin": "Password must be at least 6 characters",
+      "reqMatch": "New password and confirmation must match exactly",
+      "body": "Self-registration for admin accounts is disabled. New administrators must be created by the platform owner."
+    },
+    "head": {
+      "title": "Settings — UstaGo Avto Admin",
+      "description": "Configure application name, support contacts and languages.",
+      "ogDescription": "General configuration for UstaGo Avto."
+    }
+  },
+  "pagination": {
+    "summary": "{{total}} records · page {{page}} of {{pageCount}}",
+    "prev": "Prev",
+    "next": "Next"
+  },
+  "offers": {
+    "title": "Special Offers",
+    "description": "Manage promotional campaigns, discounts, and banners on the customer home page.",
+    "addOffer": "Add Special Offer",
+    "editOffer": "Edit Offer",
+    "deleteOffer": "Delete Offer",
+    "deleteConfirm": "Are you sure you want to delete this offer?",
+    "table": {
+      "image": "Image",
+      "badge": "Badge",
+      "title": "Title",
+      "order": "Order",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "form": {
+      "titleLabel": "Title",
+      "titlePlaceholder": "e.g. Seasonal 20% Discount",
+      "subtitleLabel": "Subtitle",
+      "subtitlePlaceholder": "Get up to 20% off all diagnostics services",
+      "ctaLabel": "Button Text (CTA)",
+      "ctaPlaceholder": "Learn more / Book now",
+      "imageLabel": "Image URL",
+      "imagePlaceholder": "https://images.unsplash.com/...",
+      "linkLabel": "Target Link",
+      "linkPlaceholder": "/search or /services",
+      "badgeLabel": "Badge Label",
+      "badgePlaceholder": "-20% or New",
+      "accentLabel": "Color Accent (Gradient)",
+      "sortOrderLabel": "Display Order",
+      "activeLabel": "Active (visible on home page)"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "saved": "Offer successfully saved",
+    "deleted": "Offer deleted",
+    "empty": "No special offers created yet."
+  }
+}

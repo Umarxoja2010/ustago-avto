@@ -1,0 +1,159 @@
+{
+  "dashboard": {
+    "updated": "Dashboard updated",
+    "acceptingJobs": "Accepting new jobs",
+    "notAcceptingJobs": "Not accepting jobs",
+    "acceptingHint": "Customers can book you right now",
+    "notAcceptingHint": "You are hidden from search",
+    "stats": {
+      "today": "Today",
+      "rating": "Rating"
+    },
+    "bookingRequests": "Booking requests",
+    "seeAll": "See all",
+    "noRequests": "No new requests right now.",
+    "todaysJobs": "Today's jobs",
+    "schedule": "Schedule",
+    "noActiveJobs": "No active jobs.",
+    "jobAccepted": "Job accepted",
+    "requestRejected": "Request rejected"
+  },
+  "jobCard": {
+    "state": {
+      "request": "New request",
+      "active": "In progress",
+      "completed": "Completed",
+      "rejected": "Rejected"
+    },
+    "reject": "Reject",
+    "accept": "Accept",
+    "markCompleted": "Mark completed"
+  },
+  "bottomNav": {
+    "dashboard": "Dashboard",
+    "jobs": "Jobs",
+    "services": "Services",
+    "alerts": "Alerts",
+    "profile": "Profile"
+  },
+  "jobs": {
+    "title": "Jobs",
+    "subtitle": "Review requests, track work in progress and close finished jobs.",
+    "tabs": {
+      "new": "New ({{count}})",
+      "active": "Active",
+      "done": "Done",
+      "rejected": "Rejected"
+    },
+    "empty": "Nothing here yet.",
+    "jobAccepted": "Job accepted",
+    "requestRejected": "Request rejected",
+    "jobCompleted": "Job marked as completed",
+    "details": {
+      "jobId": "Job ID",
+      "dateTime": "Date & time",
+      "address": "Address",
+      "price": "Price",
+      "customerNote": "Customer note",
+      "none": "—"
+    }
+  },
+  "services": {
+    "title": "My services",
+    "subtitle": "Set the services customers can book.",
+    "edit": "Edit",
+    "deleteLabel": "Delete {{name}}",
+    "addService": "Add service",
+    "editService": "Edit service",
+    "newService": "New service",
+    "serviceName": "Service name",
+    "duration": "Duration",
+    "durationPlaceholder": "45 min",
+    "defaultDuration": "1 h",
+    "price": "Service price (UZS)",
+    "pricePlaceholder": "e.g. 150000",
+    "priceNegotiable": "Negotiable",
+    "priceHint": "Optional. If left blank, it will show as «Negotiable».",
+    "serviceUpdated": "Service updated",
+    "serviceAdded": "Service added",
+    "serviceRemoved": "Service removed"
+  },
+  "schedule": {
+    "title": "Schedule",
+    "subtitle": "Upcoming appointments and your weekly working hours.",
+    "workingHours": "Working hours",
+    "closed": "Closed",
+    "opened": "opened",
+    "days": {
+      "Monday": "Monday",
+      "Tuesday": "Tuesday",
+      "Wednesday": "Wednesday",
+      "Thursday": "Thursday",
+      "Friday": "Friday",
+      "Saturday": "Saturday",
+      "Sunday": "Sunday",
+      "Mon": "Mon",
+      "Tue": "Tue",
+      "Wed": "Wed",
+      "Thu": "Thu",
+      "Fri": "Fri",
+      "Sat": "Sat",
+      "Sun": "Sun"
+    },
+    "dayStatusToast": "{{day}} {{status}}"
+  },
+  "reviews": {
+    "title": "Reviews",
+    "reviewsCount": "{{count}} reviews"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "subtitle": "Job requests and reviews in one place."
+  },
+  "profile": {
+    "links": {
+      "reviews": "Reviews",
+      "schedule": "Schedule & working hours",
+      "help": "Help & support"
+    },
+    "supportToast": "Support will call you back shortly",
+    "acceptingJobs": "Accepting new jobs",
+    "toggleAvailability": "Toggle your availability",
+    "gallery": "Workshop gallery",
+    "galleryAlt": "Workshop",
+    "stats": {
+      "rating": "Rating",
+      "reviews": "Reviews",
+      "experience": "Experience",
+      "years": "{{count}} yrs"
+    },
+    "language": "Language",
+    "logOut": "Log out",
+    "logOutConfirmTitle": "Log out?",
+    "logOutConfirmBody": "You will need to sign in again to manage your workshop.",
+    "editProfile": "Edit profile",
+    "editProfileDescription": "Update your workshop name, description, address, logo and cover photo",
+    "workshopName": "Workshop name",
+    "about": "Description",
+    "address": "Address",
+    "logo": "Workshop logo",
+    "cover": "Cover photo",
+    "changeLogo": "Change logo",
+    "changeCover": "Change cover",
+    "uploadingPhoto": "Uploading photo...",
+    "photoSuccess": "Photo uploaded successfully",
+    "photoFailed": "Failed to upload photo",
+    "updateSuccess": "Profile updated successfully",
+    "updateFailed": "Failed to update profile",
+    "workshopLocation": "Workshop location",
+    "changeOnMap": "Change on map",
+    "useCurrentLocation": "My location",
+    "coordinates": "Coordinates",
+    "locationUpdated": "New location saved!"
+  },
+  "head": {
+    "title": "Mechanic panel — UstaGo Avto",
+    "description": "Manage booking requests, active jobs, services and working hours for your UstaGo Avto workshop.",
+    "ogDescription": "Manage jobs and services for your workshop."
+  }
+}

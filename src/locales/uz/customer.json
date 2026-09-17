@@ -1,0 +1,337 @@
+{
+  "home": {
+    "greeting": {
+      "morning": "Xayrli tong",
+      "afternoon": "Xayrli kun",
+      "evening": "Xayrli kech"
+    },
+    "cityLabel": "{{city}}, O'zbekiston",
+    "searchPlaceholder": "Bugun qanday xizmat kerak?",
+    "notificationsLabel": "Bildirishnomalar",
+    "sections": {
+      "quickServices": "Tezkor xizmatlar",
+      "nearbyMechanics": "Yaqin atrofdagi ustalar",
+      "specialOffers": "Maxsus takliflar",
+      "popularServices": "Ommabop xizmatlar"
+    },
+    "seeAll": "Barchasi",
+    "browse": "Ko'rish",
+    "from": "{{price}} dan",
+    "avg": "o'rtacha {{price}}",
+    "gpsActive": "GPS aniqlandi",
+    "gpsRequesting": "Aniqlanmoqda...",
+    "enableGps": "Joylashuvni yoqish",
+    "refreshSuccess": "Yaqin atrofdagi ustaxonalar yangilandi"
+  },
+  "search": {
+    "title": "Usta topish",
+    "searchPlaceholder": "Ustaxona, xizmat yoki tuman",
+    "clearSearch": "Qidiruvni tozalash",
+    "filters": "Filtrlar",
+    "filtersTitle": "Filtrlar",
+    "location": "Joylashuv",
+    "maxStartingPrice": "Maksimal boshlang'ich narx · {{price}}",
+    "minimumRating": "Minimal reyting · {{rating}}",
+    "any": "Har qanday",
+    "distance": "Masofa · {{distance}} km gacha",
+    "openNow": "Hozir ochiq",
+    "vehicleType": "Transport turi",
+    "serviceType": "Xizmat turi",
+    "resetAllFilters": "Barcha filtrlarni tiklash",
+    "searching": "Qidirilmoqda…",
+    "workshopsFound": "{{count}} ta ustaxona topildi",
+    "noWorkshops": {
+      "title": "Mos ustaxona topilmadi",
+      "description": "Masofa yoki narx oralig'ini kengaytiring, yoki barcha natijalarni ko'rish uchun filtrlarni tozalang.",
+      "action": "Filtrlarni o'zgartirish"
+    },
+    "districts": {
+      "allTashkent": "Butun Toshkent",
+      "chilanzar": "Chilonzor",
+      "yunusabad": "Yunusobod",
+      "mirzoUlugbek": "Mirzo Ulug'bek",
+      "uchtepa": "Uchtepa",
+      "olmazor": "Olmazor",
+      "yashnobod": "Yashnobod",
+      "shayxontohur": "Shayxontohur"
+    },
+    "vehicleTypes": {
+      "any": "Har qanday",
+      "passengerCars": "Yengil mashinalar",
+      "trucks": "Yuk mashinalari",
+      "foreignCars": "Chet el mashinalari (Inomarka)",
+      "cobalt": "Cobalt",
+      "gentra": "Gentra / Lacetti",
+      "nexia": "Nexia (1, 2, 3)",
+      "spark": "Spark",
+      "matiz": "Matiz",
+      "damas": "Damas / Labo",
+      "tracker": "Tracker",
+      "malibu": "Malibu",
+      "onix": "Onix / Monza",
+      "suv": "Krossover / SUV",
+      "sedan": "Sedan",
+      "hatchback": "Xetchbek",
+      "minivan": "Miniven"
+    },
+    "sorts": {
+      "recommended": "Tavsiya etilgan",
+      "nearest": "Eng yaqin",
+      "topRated": "Eng yuqori reyting",
+      "lowestPrice": "Eng arzon"
+    }
+  },
+  "bookings": {
+    "title": "Bandlovlarim",
+    "subtitle": "UstaGo ustaxonalari bilan barcha rejalashtirilgan ishlaringiz.",
+    "tabs": {
+      "upcoming": "Bo'ladigan",
+      "completed": "Bajarilgan",
+      "cancelled": "Bekor qilingan"
+    },
+    "state": {
+      "upcoming": "Bo'ladigan",
+      "completed": "Bajarilgan",
+      "cancelled": "Bekor qilingan"
+    },
+    "noBookings": {
+      "title": "{{state}} bandlovlar yo'q",
+      "upcomingDescription": "Yaqin ustaxonani band qiling va uchrashuvingiz shu yerda paydo bo'ladi.",
+      "genericDescription": "Sizda {{state}} bandlovlar hali yo'q."
+    },
+    "details": "Batafsil",
+    "reschedule": "Vaqtini o'zgartirish",
+    "cancel": "Bekor qilish",
+    "detail": {
+      "bookingId": "Band ID",
+      "workshop": "Ustaxona",
+      "date": "Sana",
+      "vehicle": "Transport",
+      "statusTimeline": "Holat tarixi"
+    },
+    "rescheduleTitle": "Yangi vaqtni tanlang",
+    "rescheduleSuccess": "{{time}} ga ko'chirildi",
+    "cancelDialog": {
+      "title": "Ushbu bandlovni bekor qilasizmi?",
+      "description": "Ustaxona darhol xabardor qilinadi. Keyinroq yana band qilishingiz mumkin.",
+      "keep": "Bandlovni saqlash",
+      "confirm": "Bandlovni bekor qilish"
+    },
+    "cancelSuccess": "Bandlov bekor qilindi"
+  },
+  "favorites": {
+    "title": "Sevimlilar",
+    "subtitle": "Keyinroq uchun saqlagan ustaxona va xizmatlaringiz.",
+    "tabs": {
+      "mechanics": "Ustalar ({{count}})",
+      "services": "Xizmatlar ({{count}})"
+    },
+    "noWorkshops": {
+      "title": "Saqlangan ustaxona yo'q",
+      "description": "Tez orada qayta band qilish uchun istalgan ustaxonadagi yurak belgisini bosing."
+    },
+    "noServices": {
+      "title": "Saqlangan xizmat yo'q",
+      "description": "Tez-tez band qiladigan xizmatlaringizni saqlang."
+    },
+    "from": "{{price}} dan",
+    "book": "Band qilish",
+    "removeAria": "{{name}} ni sevimlilardan olib tashlash",
+    "remove": "O'chirish"
+  },
+  "profile": {
+    "stats": {
+      "bookings": "Bandlovlar",
+      "vehicles": "Transportlar",
+      "memberSince": "A'zo bo'lgan"
+    },
+    "myVehicles": "Mening transportlarim",
+    "savedCount": "{{count}} ta saqlangan",
+    "bookingHistory": "Bandlovlar tarixi",
+    "totalCount": "jami {{count}}",
+    "language": "Til",
+    "darkMode": "Tungi rejim",
+    "toggleDarkMode": "Tungi rejimni almashtirish",
+    "support": "Yordam",
+    "supportValue": "24/7",
+    "supportOpening": "Yordam chati ochilmoqda…",
+    "about": "UstaGo Avto haqida",
+    "aboutValue": "v2.4.0",
+    "aboutToast": "UstaGo Avto · Toshkent, 2026",
+    "logout": "Chiqish",
+    "logoutDialog": {
+      "title": "UstaGo dan chiqmoqchimisiz?",
+      "description": "Bandlovlar va saqlangan ustaxonalarni ko'rish uchun qayta kirishingiz kerak bo'ladi.",
+      "stay": "Hisobda qolish",
+      "confirm": "Chiqish"
+    },
+    "logoutSuccess": "Tizimdan chiqdingiz",
+    "footer": "UstaGo Avto · O'zbekiston haydovchilari uchun yaratilgan",
+    "editProfile": "Profilni tahrirlash",
+    "editProfileDescription": "Ismingiz, telefon raqamingiz, emailingiz va rasmingizni o'zgartiring",
+    "fullName": "To'liq ism",
+    "phoneNumber": "Telefon raqami",
+    "email": "Email",
+    "photo": "Profil rasmi",
+    "changePhoto": "Rasmni o'zgartirish",
+    "uploadPhoto": "Rasm tanlash",
+    "uploadingPhoto": "Rasm yuklanmoqda...",
+    "photoSuccess": "Profil rasmi muvaffaqiyatli yangilandi",
+    "photoFailed": "Rasmni yuklashda xatolik yuz berdi",
+    "updateSuccess": "Profil muvaffaqiyatli yangilandi",
+    "updateFailed": "Profilni yangilab bo'lmadi"
+  },
+  "vehicles": {
+    "title": "Mening transportlarim",
+    "backAria": "Profilga qaytish",
+    "add": "Qo'shish",
+    "noVehicles": {
+      "title": "Hali transport yo'q",
+      "description": "Mashinangizni bir marta qo'shing va har bir bandlov to'g'ri ma'lumotlar bilan to'ldiriladi.",
+      "action": "Transport qo'shish"
+    },
+    "noPlate": "Raqam yo'q",
+    "removeAria": "{{brand}} {{model}} ni o'chirish",
+    "removeSuccess": "Transport o'chirildi",
+    "addTitle": "Transport qo'shish",
+    "saveVehicle": "Transportni saqlash",
+    "validation": "Marka va model kiritilishi shart",
+    "addSuccess": "Transport qo'shildi",
+    "fields": {
+      "brand": "Marka",
+      "model": "Model",
+      "year": "Yil",
+      "engine": "Dvigatel",
+      "plate": "Davlat raqami",
+      "color": "Rang"
+    }
+  },
+  "notifications": {
+    "title": "Bildirishnomalar",
+    "backAria": "Bosh sahifaga qaytish",
+    "tabs": {
+      "all": "Barchasi",
+      "bookings": "Bandlovlar",
+      "messages": "Xabarlar",
+      "news": "Yangiliklar"
+    }
+  },
+  "mechanic": {
+    "goBack": "Orqaga",
+    "share": "Ulashish",
+    "shareToast": "Havola nusxalandi",
+    "removeFromFavorites": "Sevimlilardan olib tashlash",
+    "saveWorkshop": "Ustaxonani saqlash",
+    "yearsExperience": "{{owner}} · {{years}} yillik tajriba",
+    "reviewsCount": "{{count}} ta sharh",
+    "openNow": "Hozir ochiq",
+    "closed": "Yopiq",
+    "untilTime": "20:00 gacha",
+    "navigate": "Yo'nalish",
+    "navigatingToast": "Navigatsiya ochilmoqda…",
+    "workshopLocation": "Ustaxona joylashuvi",
+    "openInGoogleMaps": "Google Xaritada ochish (Marshrut)",
+    "distanceAway": "{{distance}} km uzoqlikda",
+    "workingHours": "Ish vaqti",
+    "tabs": {
+      "services": "Xizmatlar",
+      "gallery": "Galereya",
+      "reviews": "Sharhlar"
+    },
+    "galleryAlt": "{{name}} rasmi {{index}}",
+    "bookAppointment": "Uchrashuv band qilish",
+    "bookAt": "{{name}} da band qilish",
+    "service": "Xizmat",
+    "tomorrow": "Ertaga",
+    "confirmBooking": "Bandlovni tasdiqlash",
+    "bookingRequested": "Bandlov so'raldi",
+    "bookingRequestedDescription": "{{name}} · ertaga {{time}} da",
+    "notSpecified": "Ko'rsatilmagan",
+    "unavailableTitle": "Ustaxona mavjud emas",
+    "coverAlt": "{{name}} muqova rasmi"
+  },
+  "layout": {
+    "sosAria": "Favqulodda yordam",
+    "sosTitle": "Favqulodda yordam",
+    "sosDescription": "Biz eng yaqin ochiq ustaxonani topamiz yoki joyingizga mobil ustani yuboramiz.",
+    "requestMobileMechanic": "Mobil usta chaqirish",
+    "mobileMechanicRequested": "Mobil usta so'raldi",
+    "mobileMechanicDescription": "Eng yaqin jamoa 2 daqiqada sizga qo'ng'iroq qiladi.",
+    "callSupport": "24/7 yordamga qo'ng'iroq",
+    "callingSupportToast": "UstaGo yordamiga qo'ng'iroq qilinmoqda…"
+  },
+  "components": {
+    "openNow": "Hozir ochiq",
+    "closed": "Yopiq",
+    "startingFrom": "Boshlang'ich narx",
+    "view": "Ko'rish",
+    "from": "{{price}} dan",
+    "goToOffer": "{{index}}-taklifga o'tish",
+    "ratingAria": "Reyting 5 dan {{value}}",
+    "addToFavorites": "Sevimlilarga qo'shish",
+    "removeFromFavorites": "Sevimlilardan olib tashlash"
+  },
+  "head": {
+    "search": {
+      "title": "Avtoustaxonalarni qidirish — UstaGo Avto",
+      "description": "Yaqin atrofdagi avtoustalarni xizmat, narx, reyting, masofa va transport turi bo'yicha filtrlang, so'ng darhol band qiling.",
+      "ogDescription": "Ustalarni narx, reyting, masofa va boshqalar bo'yicha filtrlang."
+    },
+    "bookings": {
+      "title": "Bandlovlarim — UstaGo Avto",
+      "description": "Bo'ladigan, bajarilgan va bekor qilingan bandlovlarni kuzating, bir tegishda qayta rejalashtiring yoki bekor qiling.",
+      "ogDescription": "Bandlovlaringizni kuzating, qayta rejalashtiring yoki bekor qiling."
+    },
+    "favorites": {
+      "title": "Sevimlilar — UstaGo Avto",
+      "description": "Saqlangan avtoustaxonalar va sevimli xizmatlaringiz, bir tegishda qayta band qilishga tayyor.",
+      "ogDescription": "Saqlangan ustaxona va xizmatlar, qayta band qilishga tayyor."
+    },
+    "profile": {
+      "title": "Profilim — UstaGo Avto",
+      "description": "UstaGo Avto hisobingizni boshqaring: transportlar, bandlovlar tarixi, til va yordam.",
+      "ogDescription": "Transportlar, til va yordamni boshqaring."
+    },
+    "vehicles": {
+      "title": "Mening transportlarim — UstaGo Avto",
+      "description": "Tezroq bandlov qilish uchun mashinalaringizni marka, model, yil, dvigatel, raqam va rangi bilan saqlang.",
+      "ogDescription": "Tezroq xizmat bandlovi uchun mashinalaringizni saqlang."
+    },
+    "notifications": {
+      "title": "Bildirishnomalar — UstaGo Avto",
+      "description": "Bandlov yangilanishlari, ustaxona xabarlari, aksiyalar va platforma e'lonlari bir joyda.",
+      "ogDescription": "Bandlov yangilanishlari, xabarlar, aksiya va e'lonlar."
+    },
+    "mechanic": {
+      "titleWithName": "{{name}} — UstaGo Avto",
+      "description": "{{name}}, {{district}} tumanida: {{reviewCount}} ta sharh asosida {{rating}}★. UstaGo Avto orqali onlayn band qiling.",
+      "ogDescription": "{{district}} tumanidagi tasdiqlangan ustaxona. Bir necha soniyada band qiling."
+    },
+    "app": {
+      "title": "UstaGo Avto — Ishonchli avtoustalarni band qiling",
+      "description": "Toshkentdagi yaqin atrofdagi tasdiqlangan avtoustaxonalarni toping, narxlarni solishtiring va bir necha soniyada usta band qiling.",
+      "ogDescription": "Yaqin atrofdagi tasdiqlangan ustaxonalarni toping, narxlarni solishtiring va usta band qiling."
+    }
+  },
+  "phones": {
+    "title": "Telefon raqamlar",
+    "subtitle": "3 tagacha telefon raqam qo'shishingiz mumkin",
+    "securityNoticeTitle": "Xavfsizlik eslatmasi",
+    "securityNoticeBody": "Hisobingiz xavfsizligini ta'minlash va firibgarlikning oldini olish maqsadida, o'chirilgan telefon raqamlar darhol emas, 14 kundan keyin tizimdan butunlay o'chiriladi. Ushbu muddat davomida raqamni istalgan vaqtda qayta tiklashingiz mumkin.",
+    "primary": "Asosiy",
+    "scheduledDeletionBadge": "14 kundan keyin o'chiriladi ({{days}} kun qoldi)",
+    "restoreAction": "Bekor qilish",
+    "makePrimary": "Asosiy qilish",
+    "deleteAction": "O'chirish",
+    "addNewPhone": "Yangi telefon raqam qo'shish",
+    "enterNewPhone": "Yangi raqamni kiriting",
+    "confirmDeleteTitle": "Raqamni o'chirishni tasdiqlaysizmi?",
+    "confirmDeleteDesc1": "{{phone}} raqamini hisobingizdan o'chirishga so'rov yuborilmoqda.",
+    "confirmDeleteDesc2": "Ushbu raqam darhol emas, 14 kundan keyin tizimdan butunlay o'chiriladi. 14 kunlik muddat davomida istalgan payt 'Bekor qilish' tugmasi orqali raqamni qayta faollashtirishingiz mumkin.",
+    "confirmDeleteButton": "O'chirishni rejalashtirish",
+    "addSuccess": "Telefon raqam muvaffaqiyatli qo'shildi",
+    "deleteScheduled": "Xavfsizlik sababli telefon raqam 14 kundan keyin butunlay tizimdan o'chiriladi.",
+    "restoreSuccess": "Telefon raqamni o'chirish bekor qilindi va qayta faollashtirildi.",
+    "primarySuccess": "Asosiy telefon raqam muvaffaqiyatli o'zgartirildi."
+  }
+}
