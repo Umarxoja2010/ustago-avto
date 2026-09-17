@@ -34,6 +34,7 @@ function HomeScreen() {
     coords: userCoords,
     isRealGps,
     status: locationStatus,
+    locationName,
     requestLocation,
   } = useUserLocation();
 
@@ -115,7 +116,15 @@ function HomeScreen() {
               </p>
               <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
                 <MapPin className="h-3.5 w-3.5 text-primary shrink-0" />
-                <span>{user?.workshop?.city ?? "Tashkent"}</span>
+                <span className="truncate max-w-[160px] sm:max-w-[200px] font-medium text-foreground/90">
+                  {isRealGps && locationName
+                    ? locationName
+                    : locationName ||
+                      user?.city ||
+                      user?.region ||
+                      user?.workshop?.city ||
+                      "Toshkent"}
+                </span>
                 <span>•</span>
                 {isRealGps ? (
                   <span className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-medium">

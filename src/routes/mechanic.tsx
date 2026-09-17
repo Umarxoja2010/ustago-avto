@@ -34,12 +34,12 @@ function MechanicLayout() {
 
   return (
     <div className="min-h-screen bg-muted/40 md:py-8">
-      <div className="mx-auto flex min-h-screen w-full max-w-[430px] flex-col overflow-hidden bg-app-canvas md:min-h-[860px] md:rounded-[2.5rem] md:border md:border-border md:shadow-float">
+      <div className="relative mx-auto flex min-h-screen w-full max-w-[430px] flex-col overflow-x-hidden bg-app-canvas md:min-h-[860px] md:rounded-[2.5rem] md:border md:border-border md:shadow-float">
         <div className="sticky top-0 z-40 flex items-center justify-between bg-app-canvas/85 px-5 py-2.5 backdrop-blur border-b border-border/40">
           <BrandLogo size="sm" theme="auto" />
           <LanguageSwitcher compact />
         </div>
-        <main key={pathname} className="animate-fade-in flex-1 pb-2">
+        <main key={pathname} className="animate-fade-in flex-1 pb-24">
           <Outlet />
         </main>
         <MechanicBottomNav />

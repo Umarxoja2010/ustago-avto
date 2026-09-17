@@ -15,6 +15,7 @@ import {
   Edit,
   Camera,
   Loader2,
+  MapPin,
   type LucideIcon,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -40,6 +41,7 @@ import { useCustomerStore } from "@/lib/customer-store";
 import { useAuth } from "@/lib/auth";
 import { useBookings } from "@/lib/hooks/use-bookings";
 import { useVehicles } from "@/lib/hooks/use-vehicles";
+import { useUserLocation } from "@/lib/hooks/use-user-location";
 import { api, ApiError } from "@/lib/api-client";
 import i18n from "@/lib/i18n";
 
@@ -120,6 +122,7 @@ function ProfileScreen() {
   const { user, signOut, updateUser, refreshUser } = useAuth();
   const { data: apiVehicles } = useVehicles();
   const { data: apiBookings } = useBookings();
+  const { locationName, isRealGps } = useUserLocation();
 
   const avatarInputRef = React.useRef<HTMLInputElement>(null);
   const [isUploadingAvatar, setIsUploadingAvatar] = React.useState(false);
@@ -392,6 +395,21 @@ function ProfileScreen() {
             {cleanEmail ? (
               <p className="flex items-center gap-1 truncate text-sm text-muted-foreground">
                 <Mail className="h-3.5 w-3.5" /> {cleanEmail}
+              </p>
+            ) : null}
+            {locationName || user?.city || user?.region ? (
+              <p className="flex items-center gap-1 truncate text-xs text-muted-foreground mt-0.5">
+                <MapPin className="h-3.5 w-3.5 text-primary shrink-0" />
+                <span className="truncate">
+                  {isRealGps && locationName
+                    ? locationName
+                    : locationName || user?.city || user?.region}
+                </span>
+                {isRealGps ? (
+                  <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">
+                    (GPS)
+                  </span>
+                ) : null}
               </p>
             ) : null}
           </div>

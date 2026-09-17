@@ -51,20 +51,20 @@ function CustomerAppLayout() {
   return (
     <CustomerStoreProvider>
       <div className="min-h-screen bg-muted/40 md:py-8">
-        <div className="mx-auto flex min-h-screen w-full max-w-[430px] flex-col overflow-hidden bg-app-canvas md:min-h-[860px] md:rounded-[2.5rem] md:border md:border-border md:shadow-float">
+        <div className="relative mx-auto flex min-h-screen w-full max-w-[430px] flex-col overflow-x-hidden bg-app-canvas md:min-h-[860px] md:rounded-[2.5rem] md:border md:border-border md:shadow-float">
           <div className="sticky top-0 z-40 flex justify-end bg-app-canvas/85 px-5 py-2 backdrop-blur">
             <LanguageSwitcher compact />
           </div>
-          <main key={pathname} className="animate-fade-in flex-1 pb-2">
+          <main key={pathname} className="animate-fade-in flex-1 pb-24">
             <Outlet />
           </main>
 
-          <div className="sticky bottom-20 z-40 flex justify-end px-5">
+          <div className="fixed bottom-20 left-0 right-0 z-40 mx-auto flex max-w-[430px] justify-end px-5 pointer-events-none">
             <button
               type="button"
               onClick={() => setSos(true)}
               aria-label={t("customer:layout.sosAria")}
-              className="grid h-14 w-14 place-items-center rounded-full bg-primary text-primary-foreground shadow-fab transition-transform duration-200 active:scale-90"
+              className="pointer-events-auto grid h-14 w-14 place-items-center rounded-full bg-primary text-primary-foreground shadow-fab transition-transform duration-200 active:scale-90"
             >
               <LifeBuoy className="h-6 w-6" />
             </button>

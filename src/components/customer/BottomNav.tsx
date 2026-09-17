@@ -13,7 +13,7 @@ const tabs = [
 export function BottomNav() {
   const { t } = useTranslation("common");
   return (
-    <nav className="pointer-events-auto sticky bottom-0 z-30 border-t border-border/70 bg-card/85 pb-[env(safe-area-inset-bottom)] backdrop-blur-xl shadow-nav">
+    <nav className="pointer-events-auto fixed bottom-0 left-0 right-0 z-40 mx-auto w-full max-w-[430px] border-t border-border/70 bg-card/90 pb-[env(safe-area-inset-bottom)] backdrop-blur-xl shadow-nav">
       <ul className="grid grid-cols-5">
         {tabs.map(({ to, labelKey, icon: Icon, ...rest }) => (
           <li key={to}>

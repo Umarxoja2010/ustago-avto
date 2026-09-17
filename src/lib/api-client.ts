@@ -15,8 +15,12 @@ const TOKEN_KEY = "ustago.auth.token.v1";
 
 const rawApiUrl = (import.meta.env.VITE_API_URL as string | undefined)?.trim().replace(/\/+$/, "");
 export const API_BASE_URL: string = rawApiUrl
-  ? (rawApiUrl.endsWith("/api") ? rawApiUrl : `${rawApiUrl}/api`)
-  : (import.meta.env.DEV ? "/api" : "http://localhost:8000/api");
+  ? rawApiUrl.endsWith("/api")
+    ? rawApiUrl
+    : `${rawApiUrl}/api`
+  : import.meta.env.DEV
+    ? "/api"
+    : "http://localhost:8000/api";
 
 export function getToken(): string | null {
   try {
