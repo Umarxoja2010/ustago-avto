@@ -22,6 +22,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { BrandLogo } from "@/components/BrandLogo";
 import { roleHome, useAuth } from "@/lib/auth";
+import { ApiError } from "@/lib/api-client";
 import { formatUzPhone, isValidUzPhone, normalizeUzPhone } from "@/lib/phone-utils";
 import { cn } from "@/lib/utils";
 import i18n from "@/lib/i18n";
@@ -133,11 +134,53 @@ function RegisterPage() {
       toast.success(t("register.accountCreated"));
       navigate({ to: roleHome[created.role], replace: true });
     } catch (err) {
-      toast.error(
-        err instanceof Error
-          ? t(err.message, { defaultValue: t("register.registrationFailed") })
-          : t("register.registrationFailed"),
-      );
+      let errorMsg = t("register.registrationFailed", {
+        defaultValue: "Ro'yxatdan o'tish amalga oshmadi",
+      });
+
+      if (err instanceof ApiError) {
+        if (
+          err.errors?.phone?.some(
+            (e) =>
+              e.includes("accountExists") ||
+              e.includes("taken") ||
+              e.includes("unique"),
+          )
+        ) {
+          errorMsg = t("errors.accountExists", {
+            defaultValue: "Bu telefon raqami bilan akkaunt allaqachon mavjud",
+          });
+        } else if (
+          err.errors?.email?.some(
+            (e) =>
+              e.includes("accountExists") ||
+              e.includes("taken") ||
+              e.includes("unique"),
+          )
+        ) {
+          errorMsg = "Bu email bilan akkaunt allaqachon mavjud";
+        } else if (err.errors?.phone) {
+          errorMsg = "Telefon raqami noto'g'ri kiritildi (+998 XX-XXX-XX-XX)";
+        } else if (err.errors?.password) {
+          errorMsg = "Parol kamida 6 ta belgidan iborat bo'lishi kerak";
+        } else if (err.errors?.["workshop.name"]) {
+          errorMsg = "Ustaxona nomini kiriting";
+        } else if (err.errors?.["workshop.address"]) {
+          errorMsg = "Ustaxona manzilini kiriting";
+        } else {
+          const firstKey = Object.keys(err.errors || {})[0];
+          const firstErr = firstKey ? err.errors[firstKey]?.[0] : undefined;
+          if (firstErr) {
+            errorMsg = t(firstErr, { defaultValue: firstErr });
+          } else if (err.message) {
+            errorMsg = t(err.message, { defaultValue: err.message });
+          }
+        }
+      } else if (err instanceof Error && err.message) {
+        errorMsg = t(err.message, { defaultValue: err.message });
+      }
+
+      toast.error(errorMsg);
     } finally {
       setLoading(false);
     }

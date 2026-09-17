@@ -16,6 +16,7 @@ import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { BrandLogo } from "@/components/BrandLogo";
 import { roleHome, useAuth } from "@/lib/auth";
+import { ApiError } from "@/lib/api-client";
 import i18n from "@/lib/i18n";
 
 export const Route = createFileRoute("/login")({
@@ -80,13 +81,21 @@ function LoginPage() {
       );
       navigate({ to: roleHome[signedIn.role], replace: true });
     } catch (err) {
-      toast.error(
-        err instanceof Error
-          ? t(err.message, {
-              defaultValue: t("login.signInFailed", { defaultValue: "Kirishda xatolik yuz berdi" }),
-            })
-          : t("login.signInFailed", { defaultValue: "Kirishda xatolik yuz berdi" }),
-      );
+      let msg = t("login.signInFailed", { defaultValue: "Kirishda xatolik yuz berdi" });
+      if (err instanceof ApiError) {
+        if (err.message === "errors.invalidCredentials") {
+          msg = t("errors.invalidCredentials", {
+            defaultValue: "Telefon raqam/email yoki parol noto'g'ri",
+          });
+        } else if (err.message === "errors.accountSuspended") {
+          msg = "Akkauntingiz faol emas yoki bloklangan. Administratorga murojaat qiling.";
+        } else if (err.message) {
+          msg = t(err.message, { defaultValue: err.message });
+        }
+      } else if (err instanceof Error && err.message) {
+        msg = t(err.message, { defaultValue: err.message });
+      }
+      toast.error(msg);
     } finally {
       setLoading(false);
     }

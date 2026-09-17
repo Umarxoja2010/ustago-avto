@@ -220,20 +220,26 @@ export function AuthProvider({ children }: { children: ReactNode }) {
                 password_confirmation: input.password,
                 region: input.region || undefined,
                 city: input.city || undefined,
-                workshop: input.workshop
-                  ? {
-                      name: input.workshop.name,
-                      address: input.workshop.address,
-                      city: input.city || input.workshop.city,
-                      district: undefined,
-                      lat: undefined,
-                      lng: undefined,
-                      experience: input.workshop.experience
-                        ? Number(input.workshop.experience)
-                        : undefined,
-                      services: input.workshop.services,
-                    }
-                  : undefined,
+                workshop: {
+                  name: input.workshop?.name || input.name,
+                  address: input.workshop?.address || input.city || "Toshkent",
+                  city: input.workshop?.city || input.city || "Toshkent",
+                  district: input.city || undefined,
+                  lat:
+                    typeof input.workshop?.lat === "number"
+                      ? input.workshop.lat
+                      : 41.311081,
+                  lng:
+                    typeof input.workshop?.lng === "number"
+                      ? input.workshop.lng
+                      : 69.240562,
+                  experience:
+                    input.workshop?.experience !== undefined &&
+                    input.workshop?.experience !== ""
+                      ? Number(input.workshop.experience)
+                      : 0,
+                  services: input.workshop?.services || "",
+                },
               }
             : {
                 role: input.role,

@@ -4,26 +4,34 @@
  */
 
 /**
+ * Extracts clean 9 national digits of Uzbekistan phone number from any input.
+ * Handles pasted full numbers, existing +998 prefixes, and edge cases.
+ */
+export function extractUzNationalDigits(raw: string): string {
+  let digits = (raw || "").replace(/\D/g, "");
+
+  // If user pasted a full number (+998...) into an input that already contained +998:
+  // e.g. "998998901234567" -> double 998 prefix
+  if (digits.startsWith("998998") && digits.length >= 15) {
+    digits = digits.slice(6);
+  } else if (digits.startsWith("998")) {
+    digits = digits.slice(3);
+  }
+
+  // Strictly maximum 9 digits
+  return digits.slice(0, 9);
+}
+
+/**
  * Formats user input as Uzbekistan phone number with automatic dashes:
  * Examples:
  * "90" -> "+998 90"
  * "90123" -> "+998 90-123"
  * "9012345" -> "+998 90-123-45"
  * "901234567" -> "+998 90-123-45-67"
- * Strictly limits to maximum 9 national digits (cannot type more).
  */
 export function formatUzPhone(value: string): string {
-  // Strip all non-digit characters
-  let digits = value.replace(/\D/g, "");
-
-  // If user pasted or typed starting with 998, strip country code to extract the 9 national digits
-  if (digits.startsWith("998")) {
-    digits = digits.slice(3);
-  }
-
-  // Strictly enforce max 9 digits
-  digits = digits.slice(0, 9);
-
+  const digits = extractUzNationalDigits(value);
   if (!digits) return "+998 ";
 
   let res = "+998 ";
@@ -41,13 +49,10 @@ export function formatUzPhone(value: string): string {
 }
 
 /**
- * Validates that exactly 9 digits are provided after +998 (neither more, nor less).
+ * Validates that exactly 9 digits are provided for Uzbekistan (+998 XX-XXX-XX-XX).
  */
 export function isValidUzPhone(value: string): boolean {
-  let digits = value.replace(/\D/g, "");
-  if (digits.startsWith("998")) {
-    digits = digits.slice(3);
-  }
+  const digits = extractUzNationalDigits(value);
   return digits.length === 9;
 }
 
@@ -55,9 +60,6 @@ export function isValidUzPhone(value: string): boolean {
  * Normalizes phone number to clean E.164-like format for backend API (+998XXXXXXXXX).
  */
 export function normalizeUzPhone(value: string): string {
-  let digits = value.replace(/\D/g, "");
-  if (digits.startsWith("998")) {
-    digits = digits.slice(3);
-  }
-  return "+998" + digits.slice(0, 9);
+  const digits = extractUzNationalDigits(value);
+  return "+998" + digits;
 }
