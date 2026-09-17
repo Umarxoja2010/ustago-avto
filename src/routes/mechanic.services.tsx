@@ -32,6 +32,20 @@ export const Route = createFileRoute("/mechanic/services")({
   component: ServicesScreen,
 });
 
+const POPULAR_SUGGESTIONS = [
+  "Dvigatel ta'miri",
+  "Moy almashtirish",
+  "Tormoz tizimi",
+  "Kompyuter diagnostika",
+  "Shinamontaj",
+  "Konditsioner xizmati",
+  "Xodovoy ta'miri",
+  "Elektr va signalizatsiya",
+  "Akkumulyator almashtirish",
+  "Kuzov ishlari",
+  "Avtoyuvish & Detailing",
+];
+
 function ServicesScreen() {
   const { t } = useTranslation("mechanic");
   const td = useDataText();
@@ -43,19 +57,36 @@ function ServicesScreen() {
 
   const [editing, setEditing] = useState<ApiMasterService | null>(null);
   const [open, setOpen] = useState(false);
+  const [useCustomName, setUseCustomName] = useState(false);
   const [catalogServiceId, setCatalogServiceId] = useState<string>("");
+  const [customName, setCustomName] = useState("");
   const [form, setForm] = useState({ duration: "", price: "" });
 
   const services = myServices ?? [];
   const takenServiceIds = new Set(services.map((s) => s.serviceId));
   const availableCatalog = (catalog ?? []).filter((c) => !takenServiceIds.has(c.id));
 
-  const onError = (err: unknown) =>
-    toast.error(err instanceof ApiError ? t(err.message, { defaultValue: err.message }) : "");
+  const onError = (err: unknown) => {
+    if (err instanceof ApiError) {
+      const fieldMsg =
+        err.fieldError("serviceId") ||
+        err.fieldError("name") ||
+        err.fieldError("price");
+      if (fieldMsg) {
+        toast.error(fieldMsg);
+        return;
+      }
+      toast.error(t(err.message, { defaultValue: err.message }));
+      return;
+    }
+    toast.error("Xatolik yuz berdi");
+  };
 
   const startAdd = () => {
     setEditing(null);
     setCatalogServiceId("");
+    setCustomName("");
+    setUseCustomName(availableCatalog.length === 0);
     setForm({ duration: "", price: "" });
     setOpen(true);
   };
@@ -89,7 +120,30 @@ function ServicesScreen() {
       return;
     }
 
-    if (!catalogServiceId) return;
+    if (useCustomName || availableCatalog.length === 0) {
+      const name = customName.trim();
+      if (!name) {
+        toast.error("Xizmat nomini kiriting");
+        return;
+      }
+      createService.mutate(
+        { name, duration, price },
+        {
+          onSuccess: () => {
+            toast.success(t("services.serviceAdded"));
+            setOpen(false);
+          },
+          onError,
+        },
+      );
+      return;
+    }
+
+    if (!catalogServiceId) {
+      toast.error("Xizmatni tanlang");
+      return;
+    }
+
     createService.mutate(
       { serviceId: Number(catalogServiceId), duration, price },
       {
@@ -102,6 +156,12 @@ function ServicesScreen() {
     );
   };
 
+  const canSubmit = editing
+    ? true
+    : useCustomName || availableCatalog.length === 0
+      ? customName.trim().length > 0
+      : Boolean(catalogServiceId);
+
   return (
     <div className="space-y-5 pb-6">
       <header className="rounded-b-[2rem] bg-card px-5 pb-5 pt-8 card-elevated">
@@ -112,6 +172,15 @@ function ServicesScreen() {
       </header>
 
       <div className="space-y-3 px-5">
+        {services.length === 0 && (
+          <div className="rounded-3xl border border-dashed border-border/80 bg-card/60 p-6 text-center">
+            <p className="text-sm font-medium text-foreground">Hozircha xizmatlar qo'shilmagan</p>
+            <p className="mt-1 text-xs text-muted-foreground">
+              Pastdagi tugmani bosib mijozlar ko'rishi va band qilishi mumkin bo'lgan xizmatlaringizni qo'shing
+            </p>
+          </div>
+        )}
+
         {services.map((s) => (
           <article
             key={s.id}
@@ -168,9 +237,8 @@ function ServicesScreen() {
 
       <div className="px-5">
         <Button
-          className="h-12 w-full rounded-2xl text-base"
+          className="h-12 w-full rounded-2xl text-base font-semibold shadow-sm"
           onClick={startAdd}
-          disabled={availableCatalog.length === 0}
         >
           <Plus className="mr-1 h-5 w-5" /> {t("services.addService")}
         </Button>
@@ -185,7 +253,23 @@ function ServicesScreen() {
           </DrawerHeader>
           <form onSubmit={submit} className="space-y-4 p-4 pb-8">
             <div className="space-y-2">
-              <Label htmlFor="svc-name">{t("services.serviceName")}</Label>
+              <div className="flex items-center justify-between">
+                <Label htmlFor="svc-name">{t("services.serviceName")}</Label>
+                {!editing && availableCatalog.length > 0 && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setUseCustomName(!useCustomName);
+                      setCatalogServiceId("");
+                      setCustomName("");
+                    }}
+                    className="text-xs font-semibold text-primary hover:underline"
+                  >
+                    {useCustomName ? t("services.chooseFromCatalog") : t("services.customService")}
+                  </button>
+                )}
+              </div>
+
               {editing ? (
                 <Input
                   id="svc-name"
@@ -193,6 +277,38 @@ function ServicesScreen() {
                   value={td(editing.name ?? "")}
                   disabled
                 />
+              ) : useCustomName || availableCatalog.length === 0 ? (
+                <div className="space-y-2">
+                  <Input
+                    id="svc-name"
+                    className="h-12 rounded-2xl"
+                    placeholder={t("services.customNamePlaceholder")}
+                    value={customName}
+                    onChange={(e) => setCustomName(e.target.value)}
+                    autoFocus
+                  />
+                  <div className="pt-1">
+                    <p className="mb-1.5 text-[11px] font-medium text-muted-foreground">
+                      {t("services.quickSuggestions")}
+                    </p>
+                    <div className="flex flex-wrap gap-1.5 max-h-32 overflow-y-auto pr-1">
+                      {POPULAR_SUGGESTIONS.map((s) => (
+                        <button
+                          key={s}
+                          type="button"
+                          onClick={() => setCustomName(s)}
+                          className={`rounded-xl px-2.5 py-1 text-xs transition-colors ${
+                            customName === s
+                              ? "bg-primary text-primary-foreground font-semibold"
+                              : "bg-muted text-muted-foreground hover:bg-muted/80 hover:text-foreground"
+                          }`}
+                        >
+                          {s}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               ) : (
                 <Select value={catalogServiceId} onValueChange={setCatalogServiceId}>
                   <SelectTrigger id="svc-name" className="h-12 rounded-2xl">
@@ -208,6 +324,7 @@ function ServicesScreen() {
                 </Select>
               )}
             </div>
+
             <div className="space-y-2">
               <Label htmlFor="svc-duration">{t("services.duration")}</Label>
               <Input
@@ -218,6 +335,7 @@ function ServicesScreen() {
                 onChange={(e) => setForm({ ...form, duration: e.target.value })}
               />
             </div>
+
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <Label htmlFor="svc-price">
@@ -250,14 +368,11 @@ function ServicesScreen() {
                 })}
               </p>
             </div>
+
             <Button
               type="submit"
-              className="h-12 w-full rounded-2xl text-base"
-              disabled={
-                createService.isPending ||
-                updateService.isPending ||
-                (!editing && !catalogServiceId)
-              }
+              className="h-12 w-full rounded-2xl text-base font-semibold"
+              disabled={createService.isPending || updateService.isPending || !canSubmit}
             >
               {editing ? t("common:actions.saveChanges") : t("services.addService")}
             </Button>

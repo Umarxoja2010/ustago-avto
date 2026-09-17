@@ -76,7 +76,11 @@
     "priceHint": "Ixtiyoriy. Bo'sh qoldirilsa «Kelishilgan» deb ko'rsatiladi.",
     "serviceUpdated": "Xizmat yangilandi",
     "serviceAdded": "Xizmat qo'shildi",
-    "serviceRemoved": "Xizmat o'chirildi"
+    "serviceRemoved": "Xizmat o'chirildi",
+    "customService": "O'z xizmatingizni kiritish",
+    "chooseFromCatalog": "Katalogdan tanlash",
+    "customNamePlaceholder": "Xizmat nomini kiriting (masalan: Shumka, Polirovka...)",
+    "quickSuggestions": "Tezkor variantlar:"
   },
   "schedule": {
     "title": "Jadval",

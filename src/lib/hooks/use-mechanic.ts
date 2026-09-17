@@ -54,7 +54,8 @@ export function useMasterServicesMine() {
 }
 
 export interface CreateMasterServiceInput {
-  serviceId: number;
+  serviceId?: number;
+  name?: string;
   price?: number;
   duration?: string;
   active?: boolean;

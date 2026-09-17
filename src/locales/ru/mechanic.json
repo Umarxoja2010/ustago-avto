@@ -76,7 +76,11 @@
     "priceHint": "Необязательно. Если не указано, будет показано «Договорная».",
     "serviceUpdated": "Услуга обновлена",
     "serviceAdded": "Услуга добавлена",
-    "serviceRemoved": "Услуга удалена"
+    "serviceRemoved": "Услуга удалена",
+    "customService": "Ввести свою услугу",
+    "chooseFromCatalog": "Выбрать из каталога",
+    "customNamePlaceholder": "Введите название услуги (напр.: Шумоизоляция, Полировка...)",
+    "quickSuggestions": "Быстрые варианты:"
   },
   "schedule": {
     "title": "Расписание",

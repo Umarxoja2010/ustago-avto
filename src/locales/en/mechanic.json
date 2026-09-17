@@ -76,7 +76,11 @@
     "priceHint": "Optional. If left blank, it will show as «Negotiable».",
     "serviceUpdated": "Service updated",
     "serviceAdded": "Service added",
-    "serviceRemoved": "Service removed"
+    "serviceRemoved": "Service removed",
+    "customService": "Enter custom service",
+    "chooseFromCatalog": "Select from catalog",
+    "customNamePlaceholder": "Enter service name (e.g. Detailing, Soundproofing...)",
+    "quickSuggestions": "Quick suggestions:"
   },
   "schedule": {
     "title": "Schedule",
